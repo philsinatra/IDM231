@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples - Functions &amp; Scope</title>
+</head>
+<body>
+  <script>
+    var name = 'Phil';
+    function logName() {
+      console.log(name);
+    }
+    logName();
+
+    // Redefine `color` inside the function.
+    // Effects the global scoped variable.
+    var color = 'red';
+    function logColor() {
+      color = 'blue';
+      console.log('color inside function: ' + color);
+    }
+    logColor();
+    console.log('color outside function: ' + color);
+
+    // `number` inside the function is a different var than `number` outside the function.
+    var number = 1;
+    function logNumber() {
+      var number = 2;
+      console.log('number inside function: ' + number);
+    }
+    logNumber();
+    console.log('number outside function: ' + number);
+  </script>
+</body>
+</html>

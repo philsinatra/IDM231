@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Examples - Looping Through A NodeList</title>
+
+  <style>
+    .hot { background-color: orange; }
+    .cool { background-color: lightgreen; }
+    .complete { background-color: gray; }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li id="one" class="hot">fresh figs</li>
+    <li id="two" class="hot">pine nuts</li>
+    <li id="three" class="hot">honey</li>
+    <li id="four" class="hot">balsamic vinegar</li>
+  </ul>
+
+  <script>
+    var first_item = document.getElementById('one');
+
+    if (first_item.hasAttribute('class')) {
+      var attr = first_item.getAttribute('class');
+      console.log('attr: ' + attr);
+
+      // Add the value of the attribute after the list
+      var el = document.createElement('p');
+      el.innerHTML = 'The first item has a class name: <b>' + attr + '</b>';
+      document.body.appendChild(el);
+
+      // Change an attribute value
+      first_item.className = 'complete';
+
+      var fourth_item = document.getElementsByTagName('li')[3];
+      fourth_item.setAttribute('class', 'cool');
+
+      // Remove an attribute
+      var third_item = document.getElementById('three');
+      if (third_item.hasAttribute('class')) {
+        third_item.removeAttribute('class');
+      }
+    }
+  </script>
+</body>
+
+</html>

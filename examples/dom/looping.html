@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Examples - Looping Through A NodeList</title>
+
+  <style>
+    .hot { background-color: orange; }
+    .cool { background-color: lightgreen; }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="hot">fresh figs</li>
+    <li class="hot">pine nuts</li>
+    <li class="hot">honey</li>
+    <li class="hot">balsamic vinegar</li>
+  </ul>
+
+  <script>
+    var hot_items = document.querySelectorAll('li.hot');
+    if (hot_items) {
+      // for (var i = 0; i < hot_items.length; i++) {
+      //   hot_items[i].className = 'cool';
+      // }
+
+      for (var i = 0; i < hot_items.length; i++) {
+        if (hot_items[i].innerHTML !== 'balsamic vinegar')
+          hot_items[i].className = 'cool';
+      }
+    }
+  </script>
+
+
+  <ol id="ingredients">
+    <li>fresh figs</li>
+    <li>pine nuts</li>
+    <li>honey</li>
+    <li>balsamic vinegar</li>
+  </ol>
+
+  <script>
+    var ingredients = document.querySelectorAll('#ingredients li');
+    if (ingredients) {
+      for (var i = 0; i < ingredients.length; i++) {
+        ingredients[i].innerHTML = ingredients[i].innerHTML + ' <b>' + i + '</b>';
+      }
+    }
+
+    // Add a new item to the list
+    ingredients  = document.getElementById('ingredients');
+    var new_item = document.createElement('li');
+    new_item.innerHTML = '<b>Hello New Item</b>';
+    ingredients.appendChild(new_item);
+
+    var first_item = document.querySelector('#ingredients li');
+    ingredients.removeChild(first_item);
+    // Why did it only remove the first 'li' even though my selector is '#ingredients li'?
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function Hotel(name, rooms, booked) {
+      this.name = name;
+      this.rooms = rooms;
+      this.booked = booked;
+      this.checkAvailability = function() {
+        return this.rooms - this.booked;
+      };
+    }
+
+    var hurleysHotel = new Hotel('Hurley\'s', 40, 25);
+    var aztecHotel = new Hotel('Aztec', 120, 77);
+
+    console.log(hurleysHotel.name + ' rooms: ' + hurleysHotel.checkAvailability());
+  </script>
+</body>
+</html>

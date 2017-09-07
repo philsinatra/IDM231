@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples - If Else</title>
+</head>
+<body>
+  <p class="response"></p>
+
+  <script>
+    var pass  = 50;    // passing score
+    var score = 70;    // current score
+    var message;       // message
+
+    // Select message to write based on score.
+    if (score >= pass) {
+      message = 'Congratulations, you passed!';
+    }
+    else {
+      message = 'Try again.';
+    }
+
+    // Display the message in a paragraph that exists in the HTML
+    var display_response = document.querySelector('.response');
+    display_response.innerHTML = message;
+
+    // Create a new element and display the message in it
+    var response_el = document.createElement('p');
+    var response_text = document.createTextNode(message);
+    response_el.appendChild(response_text);
+    document.body.appendChild(response_el);
+  </script>
+</body>
+</html>

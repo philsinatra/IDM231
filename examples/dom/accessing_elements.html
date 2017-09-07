@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Examples - Accessing DOM Elements</title>
+</head>
+
+<body>
+  <h1>Accessing and Working with DOM Elements</h1>
+  <hr>
+  <h2>Access/Update Text Nodes</h2>
+
+  <section>
+    <ul>
+      <li class="example01">Hello world</li>
+      <li>Goodbye</li>
+    </ul>
+  </section>
+
+  <script>
+    /** 
+          The text inside any element is stored in a text node. 
+          To access the text node above:
+            1. Select the li element
+            2. Use the firstChild property to get the text node
+            3. Use the text node's property nodeValue to get the text from the element
+        */
+
+    var example01 = document.querySelector('.example01');
+    var example01_text = example01.firstChild;
+    
+    console.group('Example 01');
+    console.log('example01: ' + example01);
+    console.log('example01_text: ' + example01_text);
+    console.log('example01_text.nodeValue: ' + example01_text.nodeValue);
+    console.groupEnd();
+
+    // You don't have to store each piece in a variable:
+    console.log(document.querySelector('.example01').firstChild.nodeValue);
+
+    // We can work with the HTML content:
+    console.log(document.querySelector('ul').innerHTML);
+    console.log(document.querySelector('ul').textContent);
+
+    var first_ul      = document.querySelector('ul');
+    var new_list_item = document.createElement('li');
+    var new_text_info = document.createTextNode('Howdy!');
+
+    new_list_item.appendChild(new_text_info);
+    first_ul.appendChild(new_list_item);
+    first_ul.removeChild(example01);
+  </script>
+
+  <section id="example02">
+    <h3 id="wwa">Working With Attributes</h3>
+  </section>
+
+  <script>
+    var wwa = document.getElementById('wwa');
+    console.log('wwa: ' + wwa);
+    console.log(wwa.innerHTML);
+    wwa.innerHTML = 'Goodbye Cruel World'
+
+    wwa.setAttribute('class', 'testing class2 class22');
+
+    var classList = wwa.getAttribute('class');
+    console.log(classList);
+
+    wwa.removeAttribute('id');
+    wwa.removeAttribute('class');
+  </script>
+
+  <section id="example03">
+    <h2 id="gimmieAnId">Access By Id</h2>
+
+    <script>
+      var gimmieAnId_el = document.getElementById('gimmieAnId');
+      console.log(gimmieAnId.innerHTML);
+    </script>
+
+    <ul id="querySelector_01">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+    <script>
+      var first_li = document.querySelector('#querySelector_01 li');
+      console.log(first_li.innerHTML);
+      // Notice how this only returned 'one' and no information related
+      // to any of the other list item elements.
+    </script>
+
+    <ul class="notes">
+      <li class="note">Note 1</li>
+      <li class="note">Note 2</li>
+      <li class="note">Note 3</li>
+    </ul>
+
+    <script>
+      var note_els = document.getElementsByClassName('note');
+      console.log(note_els);
+
+      note_els = document.getElementsByTagName('li');
+      console.log(note_els);
+
+      note_els = document.querySelectorAll('li');
+      console.log(note_els);
+
+      note_els = document.querySelectorAll('.notes li');
+      console.log(note_els);
+    </script>
+  </section>
+
+</body>
+
+</html>
