@@ -1,27 +1,41 @@
-# IDM231 Assignment 3
+# IDM231 Assignment 3: Decisions & Loops
 
 This page describes an assignment for this course. Due dates and submissions are handled through [Drexel Blackboard](https://learn.dcollege.net/).
 
-## Assignment 3
+## Assignment 3: Decisions & Loops
 
-1. Complete [_Assignment 3: CSS Selectors_](http://digm.drexel.edu/crs/IDM221/assignments/screens/assessment_intro.php?assignment=3).
+1. Complete [_Assignment 3: Decisions & Loops_](http://digm.drexel.edu/crs/IDM231/assignments/screens/assessment_intro.php?assignment=3).
 
-Follow the instructions on screen and complete the assignment questions. When you have answered all of the questions and are satisfied with your score, select the submit button at the bottom of the page. You'll receive a confirmation number that you must enter in [Drexel Blackboard](https://learn.dcollege.net/) under _Assignment 3: CSS Selectors_.
+Follow the instructions on screen and complete the assignment questions. When you have answered all of the questions and are satisfied with your score, select the submit button at the bottom of the page. You'll receive a confirmation number that you must enter in [Drexel Blackboard](https://learn.dcollege.net/) under _Assignment 3: Decisions & Loops_.
 
 ## Suggested Work
 
-1. Create a master .css style sheet for your site.
-1. Link the master style sheet into every .html page on your site.
-1. Use valid CSS selectors to being applying color to your site.
-    - Have you used various selectors properly?
-    - Is your CSS valid?
-    - Your color selections should begin molding your files into your final project.
+- Begin documenting variables that can be part of your final project.
+
+    ```javascript
+    var dob;            // User's birthday
+    var dob_month;      // dob: month value
+    var dob_day;        // dob: day value
+    var selected_sign;  // Currently selected sign
+    ```
+
+- Begin considering functions, methods and objects that can be part of your final project.
+
+    ```javascript
+    function playSound() {
+      // Play a sound based on the `selected_sign`
+    }
+    ```
+
+- Continue working on HTML/CSS structure for your application.
+- Continue building graphics/media assets.
+- Adjust documentation as needed as your project evolves.
 
 ## Submitting the Assignment
 
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Assignment 3**:
 
-1. Your confirmation code that you receive after completing _Assignment 3: CSS Selectors_.
+1. Your confirmation code that you receive after completing _Assignment 3: Decisions & Loops_.
 
 **Late submissions receive zero points.**
 

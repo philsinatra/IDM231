@@ -1,4 +1,4 @@
-# IDM231 Assignment - Preparation
+# IDM231 Assignment: Preparation
 
 This page describes an assignment for this course. Due dates and submissions are handled through [Drexel Blackboard](https://learn.dcollege.net/).
 
@@ -18,22 +18,23 @@ This assignment focuses on getting setup and preparing for your final project.
 
 ### Content Preparation
 
-1. Document Inspiration: select a minimum of three websites you can draw inspiration from and document your selections. Tell me why you like the site, or why you don't like the site. Is there a particular aspect of the site you like/don't? Something about how it looks? Something about how it works? Do not explain how the site works or what is on the site; instead explain why it is interesting to you.
-1. Content Inventory: Content development is the key to success in web development. The number one reason students struggle with this class is because they do not have a clear definition of the content that will be included in the project. Document the following:
-    - a minimum of four paragraphs about yourself
-    - your professional resume
-    - your professional contact information
-    - professional logo (if you have one)
-    - It would also be good to begin organizing pictures, graphics, videos, audio files and any other content or media you want to include in your project.
+Begin planning your final project by documenting and gathering/preparing assets. Suggested planning:
 
-Document your inspiration and content inventory in a _markdown_ file. You can create a separate file for each, or group it all into a single file. The goal is to gather and organize the content, and have it structured using headings, paragraphs, lists etc. in proper _markdown_ syntax.
+- Create a [flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/02-flowchart.png) that outlines how the application will work.
+- Create a [wireframe](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399) for your application screen(s).
+- Create a [style tile](http://styletil.es) for your project's visual styles.
+- Setup a local project folder for your application.
+- Setup a GitHub repository for your project.
+- Document any notes, todo items, plans etc. in Markdown files and load the files into your repository.
+- Add flowcharts, wireframes, style tiles etc. to your repository.
+- Begin creating Zodiac images for final project.
+- Begin creating sound effects for final project.
 
 ## Submitting the Assignment
 
-Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Assignment - Preparation**:
+Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Assignment: Preparation**:
 
 1. Your URL to your purchased domain (e.g. http://mywebsite.com)
-1. Your URL to your Github account profile page (e.g. https://github.com/philsinatra)
-1. Upload your _markdown_ documentation file(s) directly in [Drexel Blackboard](https://learn.dcollege.net/). **Note**: if you document your information in any other format other than _markdown_, the file(s) will not be accepted.
+1. Your URL to your Github project page (e.g. https://github.com/philsinatra/IDM231)
 
 **Late submissions receive zero points.**

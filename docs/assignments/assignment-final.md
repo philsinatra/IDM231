@@ -4,7 +4,14 @@ This page describes an assignment for this course. Due dates and submissions are
 
 ## Final Project
 
-Students will create their own custom zodiac web page based upon the Zodiac Algorithm to be delivered online. This custom zodiac web page will let the user enter any valid birth date and then compute the correct response according to the western zodiac system for that date. The user should see and hear unique renditions of their particular zodiac sign. The user should also be given the option to re-enter birth dates. This program should display all functional zodiac sign buttons just in case the user does not wish to enter their birth date. This program should also have a help screen that clearly defines how the web page works.
+Students will create their own custom zodiac web page based upon the Zodiac Algorithm to be delivered online. 
+
+- Users can enter any valid birth date. The application will compute the correct response according to the [western zodiac system](https://en.wikipedia.org/wiki/Western_astrology) for that date.
+- Users can re-enter any valid birth date. The application will re-compute the correct response.
+- All functional zodiac signs must be displayed as interactive elements that the user can select. When selected, the selected sign will be activated and displayed.
+- Each sign must be represented in a unique visual way.
+- Each sign when activated must play a unique sound effect.
+- This application must have a help screen that clearly defines how the application works.
 
 Your final project represents the culmination of past ten weeks.  This project will be graded based on the following criteria:
 
