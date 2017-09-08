@@ -51,7 +51,7 @@ Thumbs.db
 *.jpg
 *.png
 *.gif
-assignments
+/assignments
 graphics
 node_modules
 instructor_materials/images
