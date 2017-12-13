@@ -215,7 +215,3 @@ el.addEventListener('blur', function() {
 ---
 
 ## For Next Week...
-
-### Bring a notebook and pen 😃
-
-^ You will need to be able to take old fashion notes next week. No cell phone pictures.
