@@ -26,7 +26,7 @@ By the end of the course, student will be able to
 | Week 4 | Decisions & Loops |
 | Week 5 | Document Object Model (DOM) |
 | Week 6 | Events |
-| Week 7 | Demo Lab |
+| Week 7 | ES6 |
 | Week 8 | Demo Lab |
 | Week 9 | Open Lab |
 | Week 10 | Open Lab |
