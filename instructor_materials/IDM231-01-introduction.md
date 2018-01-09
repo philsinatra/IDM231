@@ -26,6 +26,7 @@ theme: Plain Jane, 3
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)
 - [Course Repository](https://github.com/philsinatra/IDM231)
+- [Final Project](https://github.com/philsinatra/IDM231/blob/master/docs/assignments/assignment-final.md)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
 

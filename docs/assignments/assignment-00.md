@@ -15,6 +15,7 @@ This assignment focuses on getting setup and preparing for your final project.
 
 1. Register a [Github](https://github.com) user account.
 1. Download and install [Sublime Text](https://www.sublimetext.com/3) (or the text editor of your choice) on your personal development computer.
+1. Join the [Drexel IDM Slack Workspace](idm-drexel.slack.com) and the IDM231 channel.
 
 ### Content Preparation
 

@@ -76,14 +76,14 @@ theme: Plain Jane, 3
 
 ^ Before diving into the JavaScript language, you need to know how it will fit together with the HTML and CSS in your web pages.
 
-^ These three layers form the basis of a popular approach to building web pages called progressive enhancement
+^ These three layers form the basis of a popular approach to building web pages called progressive enhancement.
 
 ---
 
 ## Creating a Basic Script
 
 ```javascript
-var today= new Date();
+var today = new Date();
 var current_hour = today.getHours();
 var greeting = "Welcome!";
 
@@ -195,8 +195,9 @@ if (hourNow > 18) {
 
 ```javascript
 /*
-  This script displays a greeting to the user based upon the current time.
-   It is an example from JavaScript & jQuery book.
+  This script displays a greeting to the user
+  based upon the current time.
+  It is an example from JavaScript & jQuery book.
 */
 
 var today = new Date();         // Create a new date object
