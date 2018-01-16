@@ -258,7 +258,7 @@ console.log('item_three: ' + item_three);
 // item_three: custom
 ```
 
-^ To retrieve the third item on the list, the array name is specified along with the index number in square brackets. Here you can see a variable called `item_three` is declared. Its value is set to be the third color from the co1ors array.
+^ To retrieve the third item on the list, the array name is specified along with the index number in square brackets. Here you can see a variable called `item_three` is declared. Its value is set to be the third color from the `color` array.
 
 ---
 
@@ -376,7 +376,7 @@ $$ (2 + 4) * 10 $$
 
 #### Order of Operations
 
-> Please excuse my dear aunt Sally
+> Please Excuse My Dear Aunt Sally
 
 ---
 
@@ -403,6 +403,20 @@ var greeting = 'Hello ' + full_name + '!';
 ```
 
 ^ There is just one string operator, the + symbol. It is used to join the strings on either side of it. There are many occasions where you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string **concatenation**.
+
+---
+
+### Other Operators
+
+```javascript, [.highlight: 4-5]
+color = 'beige';              // assignment operator
+area = 3 * 2;                 // arithmetic operator
+greeting = 'Hi ' + 'Molly';   // string operator
+buy = 3 > 5;                  // comparison operator
+buy = (5 > 3) && (2 < 4);     // logical operator
+```
+
+^ As we saw, there are other operators that are used for comparison and logic related tasks. We'll get into those in more detail later.
 
 ---
 
