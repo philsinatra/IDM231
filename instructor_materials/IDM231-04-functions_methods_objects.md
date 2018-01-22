@@ -171,7 +171,7 @@ function getSize(width, height, depth) {
   var area = width * height;
   var volume = width * height * depth;
   var sizes = [area, volume];
-  return sizes;  
+  return sizes;
 }
 
 var area_one = getSize(3,2,3)[0];
@@ -446,8 +446,8 @@ var aztecHotel = new Hotel('Aztec', 120, 77);
 
 - `document.write()`
 - `document.getElementByld()`
-- `document.querySe1ector()`
-- `document.querySe1ectorA11()`
+- `document.querySelector()`
+- `document.querySelectorAll()`
 - `document.createElement()`
 - `document.createTextNode()`
 
