@@ -254,9 +254,9 @@ console.log(wall_size); // dog
 
 ^ Objects group together a set of variables and functions to create a model of something you would recognize from the real world. In an object, variables and functions take on new names.
 
-^ _click_ If a variable is part of an object, it is called a **property**.
+^ _(click)_ If a variable is part of an object, it is called a **property**.
 
-^ _click_ If a function is part of an object, it is called a **method**. Methods represent tasks that are associated with the object.
+^ _(click)_ If a function is part of an object, it is called a **method**. Methods represent tasks that are associated with the object.
 
 ---
 
