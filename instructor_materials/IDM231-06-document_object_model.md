@@ -52,7 +52,7 @@ theme: Plain Jane, 3
 
 ![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
 
-^ _Element Nodes_ are represented in green in this grpahic. HTML elements describe the structure of an HTML page.
+^ _Element Nodes_ are represented in green in this graphic. HTML elements describe the structure of an HTML page.
 
 ^ To access the DOM tree, you start by looking for elements. Once you find the element you want, then you can access its text and attribute nodes if you want to. This is why you start by learning methods that allow you to access element nodes, before learning to access and alter text or attributes.
 
@@ -62,7 +62,7 @@ theme: Plain Jane, 3
 
 ^ _Attribute Nodes_ are represented in orange in this graphic. The opening tags of HTML elements can carry attributes and these are represented by attribute nodes in the DOM tree.
 
-^ Attribute nodes are not children of the element thar carries them; they are partofthat element. Once you access an element, there are specific JavaScript methods and properties to read or change that element's attributes. For example, it is common to change the values of cl ass attributes to trigger new CSS rules that affect their presentation.
+^ Attribute nodes are not children of the element that carries them; they are part of that element. Once you access an element, there are specific JavaScript methods and properties to read or change that element's attributes. For example, it is common to change the values of class attributes to trigger new CSS rules that affect their presentation.
 
 ---
 
@@ -163,7 +163,7 @@ document.getElementById('one');
 
 ^ The `getElementById()` method indicates that you want to find an element based upon the value of its `id` attribute. The method needs to know the value of the `id` attribute on the element you want. It is the _parameter_ of the method.
 
-^ This code will return the element node fot he element whose `id` attribute has a value of _one_. Often, these nodes are stored in variables so they can be reused later.
+^ This code will return the element node for the element whose `id` attribute has a value of _one_. Often, these nodes are stored in variables so they can be reused later.
 
 ---
 

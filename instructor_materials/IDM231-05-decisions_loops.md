@@ -11,9 +11,9 @@ theme: Plain Jane, 3
 
 # Decisions & Loops
 
-^ Looking at a flowchart (for all but the most basic scripts), the code can take more than one path, which means the browser runs different code in different situations. In this chapter, you will learn how to create and control the flow of data in your scripts to handle different situations.
+^ Looking at a flowchart (for all but the most basic scripts), the code can take more than one path, which means the browser runs different code in different situations. Our goal now is to learn how to create and control the flow of data in your scripts to handle different situations.
 
-^ You can analyze values in your scripts to determine whether or note they match expected results.
+^ You can analyze values in your scripts to determine whether or not they match expected results.
 
 ^ Using the results of evaluations, you can decide which path your script should go down.
 
@@ -249,6 +249,8 @@ switch (level) {
 
 ^ A `switch` statement starts with a variable called the `switch value`. Each `case` indicates a possible value for this variable and the code that should run if the variable matches that value.
 
+^ _examples/decisions/switch.html_
+
 ---
 
 ## Checking Existence
@@ -352,6 +354,8 @@ i++
 ^ When the statements have been finished, the variable `i` is incremented by 1.
 
 ^ When the condition is no longer **true**, the loop ends. The script moves on to the next line of code.
+
+^ _examples/decisions/loops.html_
 
 ---
 
