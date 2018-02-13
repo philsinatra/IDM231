@@ -19,6 +19,7 @@
 
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [You Might Not Need jQuery](http://youmightnotneedjquery.com)
+- [JavaScript Event Flow](https://blog.domfarolino.com/JavaScript-Event-Flow/)
 
 ## HTML
 

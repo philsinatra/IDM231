@@ -140,6 +140,9 @@ el.onblur = checkUserName;
 
 ```javascript
 element.addEventListener('event', functionName [, Boolean]);
+
+var myDiv = document.getElementById('myDiv');
+myDiv.addEventListener('click', myFunction, false);
 ```
 
 ^ Event listeners can deal with more than one function at a time. Here is the syntax to bind an event to an element using an event listener, and to indicate which function should execute when that event fires.
@@ -154,7 +157,7 @@ element.addEventListener('event', functionName [, Boolean]);
 
 ---
 
-## Event Listeners
+## Event Listeners Continued
 
 ```javascript
  function checkUserName() {
@@ -186,15 +189,10 @@ el.addEventListener('blur', function() {
 ## Changing Default Behavior
 
 - `preventDefault()`
-- `stopPropagation()`
 
 ^ The event object has methods that change the default behavior of an element and how the element's ancestors respond to the event.
 
 ^ _click_ Some events, such as clicking links and submitting forms, take the user to another page. To prevent the default behavior of such elements, you can use the event object's `preventDefault()` method.
-
-^ _click_ Once you have handled an event using one element, you may want to stop that event from bubbling up to its ancestor elements. To stop the bubbling up, you can use the event object's `stopPropogation()` method.
-
-^ We'll look at examples of these.
 
 ---
 
