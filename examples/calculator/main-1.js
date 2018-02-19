@@ -5,7 +5,7 @@
 
   var decimalAdded = false;
 
-  function keyPressed() {
+  const keyPressed = function() {
     const btnValue = this.innerHTML;
     let inputValue = input.innerHTML;
 
@@ -76,7 +76,7 @@
       default:
         input.innerHTML += btnValue;
     }
-  }
+  };
 
   for (let key of keys) {
     key.addEventListener('click', keyPressed);
