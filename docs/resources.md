@@ -9,6 +9,7 @@
 - [05 Decisions and Loops](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-05-decisions_loops.pdf)
 - [06 Document Object Model (DOM)](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-06-document_object_model.pdf)
 - [07 Events](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-07-events.pdf)
+- [08 ES6](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-08-es6.pdf)
 
 ## Reading Material
 
