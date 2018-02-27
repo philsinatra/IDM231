@@ -1,0 +1,70 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background: lightgray;
+  font: 100%/1.5 sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+section {
+  background-color: white;
+  padding: 2rem;
+  min-width: 27.25rem;
+}
+
+form {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+input[type="date"],
+input[type="text"] {
+  min-width: 18.75rem;
+}
+
+input[type="submit"] {
+  width: 8.125rem;
+}
+
+button {
+  display: block;
+  border: 0;
+  background-color: lightgray;
+  padding: 1rem;
+  width: 8.125rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.feedback {
+  color: darkred;
+  font-size: 0.88rem;
+}

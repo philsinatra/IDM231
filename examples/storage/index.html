@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Storage</title>
+	<link rel="stylesheet" href="screen.css">
+</head>
+
+<body>
+
+	<main>
+		<section>
+			<form id="myForm" name="myForm" method="post" action="index.html">
+				<div class="control">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Jane Doe" value="Anthony" required>
+				</div>
+				<div class="control">
+					<label for="date">Date</label>
+					<input type="date" id="date" name="date" value="02/22/1980" required>
+					<p class="feedback" hidden>
+						Please enter a valid date mm/dd/yyyy.
+					</p>
+				</div>
+				<div class="control">
+					<input type="submit" value="Submit">
+				</div>
+			</form>
+			<div class="row">
+				<button id="btnSetLocal" type="button">Set Local Storage</button>
+				<button id="btnRemoveLocal" type="button">Remove Local Storage</button>
+				<button id="btnClearLocal" type="button">Clear All Local Storage</button>
+			</div>
+			<div class="row">
+				<button id="btnSetSession" type="button">Set Session Storage</button>
+				<button id="btnRemoveSession" type="button">Remove Session Storage</button>
+				<button id="btnClearSession" type="button">Clear All Session Storage</button>
+			</div>
+			<p>
+				<a href="catch.html" target="winCatch">Go to catch.html</a>
+			</p>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+	<script src="local.js"></script>
+	<script src="session.js"></script>
+</body>
+
+</html>
