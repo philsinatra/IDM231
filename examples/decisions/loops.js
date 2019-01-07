@@ -1,7 +1,7 @@
 var scores = [24, 32, 17];
-var scores_array_length = scores.length;
+var scoresArrayLength = scores.length;
 
-for (var i = 0; i < scores_array_length; i++) {
+for (var i = 0; i < scoresArrayLength; i++) {
   console.log('Score #' + i + ': ' + scores[i]);
 }
 

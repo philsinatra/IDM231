@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
+
 <body>
-  <script>
-    var saying = 'Home sweet home';
-    console.log(saying.length);
-    console.log('saying.length: ' + saying.length);
+	<script>
+	var saying = 'Home sweet home';
+	console.log(saying.length);
+	console.log('saying.length: ' + saying.length);
 
-    var upper_case = saying.toUpperCase();
-    var lower_case = saying.toLowerCase();
+	var upperCase = saying.toUpperCase();
+	var lowerCase = saying.toLowerCase();
 
-    console.group();
-    console.log('upper_case: ' + upper_case);
-    console.log('lower_case: ' + lower_case);
-    console.groupEnd();
+	console.group();
+	console.log('upperCase: ' + upperCase);
+	console.log('lowerCase: ' + lowerCase);
+	console.groupEnd();
 
-    console.log(saying.charAt(3));
-    console.log(saying.indexOf('w'));
-    console.log(saying.lastIndexOf('m'));
+	console.log(saying.charAt(3));
+	console.log(saying.indexOf('w'));
+	console.log(saying.lastIndexOf('m'));
 
-    console.log(saying.substring(4, 10));
+	console.log(saying.substring(4, 10));
 
-    console.log(saying.split(' '));
-    var split_saying = saying.split(' ');
-    console.log(split_saying[0]);
+	console.log(saying.split(' '));
+	var splitSaying = saying.split(' ');
+	console.log(splitSaying[0]);
 
-    saying = '    Hello World    ';
-    console.log(saying);
-    console.log(saying.trim());
+	saying = '    Hello World    ';
+	console.log(saying);
+	console.log(saying.trim());
 
-    var my_name = 'The Man';
-    var my_new_name = my_name.replace('Man', 'Legend');
-    console.log('my_new_name: ' + my_new_name);
-  </script>
+	var myName = 'The Man';
+	var myNewName = myName.replace('Man', 'Legend');
+	console.log('myNewName: ' + myNewName);
+
+	</script>
 </body>
+
 </html>

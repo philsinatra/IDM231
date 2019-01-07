@@ -4,7 +4,7 @@ This page describes an assignment for this course. Due dates and submissions are
 
 ## Final Project
 
-Students will create their own custom zodiac web page based upon the Zodiac Algorithm to be delivered online. 
+Students will create their own custom zodiac web page based upon the Zodiac Algorithm to be delivered online.
 
 - Users can enter any valid birth date. The application will compute the correct response according to the [western zodiac system](https://en.wikipedia.org/wiki/Western_astrology) for that date.
 - Users can re-enter any valid birth date. The application will re-compute the correct response.

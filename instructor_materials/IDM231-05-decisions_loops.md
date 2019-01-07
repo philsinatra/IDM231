@@ -2,14 +2,11 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
 
----
-
-# Decisions & Loops
+## Decisions & Loops
 
 ^ Looking at a flowchart (for all but the most basic scripts), the code can take more than one path, which means the browser runs different code in different situations. Our goal now is to learn how to create and control the flow of data in your scripts to handle different situations.
 
@@ -21,7 +18,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-flowchart.png)
+![decision flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-flowchart.png)
 
 ^ There are often several places in a script where decisions are made that determine which lines of code should be run next. Flowcharts can help you plan for these occasions.
 
@@ -47,7 +44,7 @@ if (score > 50) {
 
 ---
 
-## Evaluation Conditions & Statements
+## Conditions & Statements
 
 ```javascript, [.highlight: 1]
 if (score > 50) {
@@ -122,7 +119,7 @@ if (score > 50) {
 
 ---
 
-### Comparison Operators
+### Other Comparison Operators
 
 | Operator | Meaning |
 | :------: | ------- |
@@ -267,7 +264,7 @@ if (my_element) {
 
 ---
 
-## Checking Existence
+## Checking Existence - Else
 
 ```javascript
 var my_element = document.getElementById('header');
@@ -337,7 +334,7 @@ i++
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_start.png)
+![loop start](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_start.png)
 
 ^ The first time the loop is run, the variable `i` (the counter) is assigned a value of zero.
 
@@ -347,7 +344,7 @@ i++
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_end.png)
+![loop end](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_end.png)
 
 ^ The variable `i` can be used inside the loop. Here it is used to write a number to the console.
 
@@ -359,4 +356,4 @@ i++
 
 ---
 
-## For next week...
+## For next week

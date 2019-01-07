@@ -2,14 +2,11 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
 
----
-
-# Variables
+## Variables
 
 ^ A script will have to temporarily store the bits of information it needs to do its job. It can store this data in variables.
 
@@ -81,11 +78,11 @@ var my_quantity;
 ```javascript, [.highlight: 5-8]
 var quantity;
 var sub_total;
-var grand_total;
+var grandTotal;
 
 quantity = 3;
 subtotal = 7;
-grand_total = 10;
+grandTotal = 10;
 ```
 
 ^ Once you name a variable, you can set the value. The equals sign is an _assignment operator_. It says that you're assigning a value to the variable. It's also used to update the value at any time. Until you've assigned a value, the variable is considered _undefined_.
@@ -98,13 +95,13 @@ grand_total = 10;
 
 ```javascript
 // numeric data type: numbers
-my_number = 0.75;
+myNumber = 0.75;
 
 //string data type: letters/characters
-my_string = 'Hello World!';
+myString = 'Hello World!';
 
 //boolean data type: `true` and `false`
-my_bool = true;
+myBoolean = true;
 ```
 
 ^ JavaScript distinguishes between numbers, strings, and true or false values known as booleans. In addition to these three data types, JavaScript also has others (arrays, objects, undefined, and null).
@@ -115,9 +112,9 @@ my_bool = true;
 
 ```javascript
 // numeric data type: numbers
-my_number = 0.75;
-my_other_number = 5272;
-negative_number = -23678;
+myNumber = 0.75;
+myOtherNumber = 5272;
+negativeNumber = -23678;
 ```
 
 ^ For tasks that involve counting or calculating sums, you will use numbers 0-9. For example, five thousand, two hundred and seventy-two would be written 5272 (note there is no comma between the thousands and
@@ -132,7 +129,7 @@ are also used for tasks such as determining the size of the screen, moving the p
 
 ```javascript
 //string data type: letters/characters
-my_string = 'Hello World!';
+myString = 'Hello World!';
 ```
 
 ^ Note how the string data type is enclosed within a pair of quotes. These can be single or double quotes, but the opening quote must match the closing quote. Strings can be used when working with any kind of text. They are frequently used to add new content into a page and they can contain HTML markup.
@@ -143,7 +140,7 @@ my_string = 'Hello World!';
 
 ```javascript
 //boolean data type: `true` and `false`
-my_bool = true;
+myBoolean = true;
 ```
 
 ^ It might seem a little abstract at first, but the Boolean data type is actually very helpful. You can think of it a little like a light switch - it is either on or off. Booleans are helpful when determining which part of a script should run.
@@ -174,9 +171,9 @@ my_bool = true;
 ```javascript
 console.log('hello world');
 
-console.log(my_variable);
+console.log(myVariable);
 
-console.log('my_variable: ' + my_variable);
+console.log('myVariable: ' + myVariable);
 ```
 
 ^ Browsers that have a console have a console object, which has several methods that your script can use to display data in the console. The `console.log()` method can write data from a script to the console. Such notes can tell you how far a script has run and what values it has received. Console messages are logged to the console window inside of the browsers Devtools. Let's look at some examples.
@@ -246,19 +243,19 @@ var colors = ['white', 'black', 'custom'];
 
 ---
 
-###  Access Items in an Array
+### Access Items in an Array
 
 ```javascript
 var colors = ['white', 'black', 'custom'];
 //               0        1         2
 
-var item_three = colors[2];
+var itemThree = colors[2];
 
-console.log('item_three: ' + item_three);
-// item_three: custom
+console.log('itemThree: ' + itemThree);
+// itemThree: custom
 ```
 
-^ To retrieve the third item on the list, the array name is specified along with the index number in square brackets. Here you can see a variable called `item_three` is declared. Its value is set to be the third color from the `color` array.
+^ To retrieve the third item on the list, the array name is specified along with the index number in square brackets. Here you can see a variable called `itemThree` is declared. Its value is set to be the third color from the `color` array.
 
 ---
 
@@ -267,10 +264,10 @@ console.log('item_three: ' + item_three);
 ```javascript
 var colors = ['white', 'black', 'custom'];
 
-var num_colors = colors.length;
+var numColors = colors.length;
 
-console.log('num_colors: ' + num_colors);
-// num_colors: 3
+console.log('numColors: ' + numColors);
+// numColors: 3
 ```
 
 ^ Each array has a property called length, which holds the number of items in the array. The name of the array is followed by a period which is then followed by the `length` keyword.
@@ -316,7 +313,7 @@ var area = 3 * 2;
 
 ^ You can perform operations on any number of individual values (see next page) to determine a single value. For example...
 
-^ The value of area is now 6. Here the expression 3 * 2 evaluates into 6. This example also uses the assignment operator, so the result of the expression 3 * 2 is stored in the variable called area.
+^ The value of area is now 6. Here the expression three times two evaluates into 6. This example also uses the assignment operator, so the result of the expression three times two is stored in the variable called area.
 
 ---
 
@@ -366,7 +363,7 @@ $$
 
 ---
 
-#### Order of Operations
+#### Use Parenthesis
 
 $$ (2 + 4) * 10 $$
 
@@ -374,9 +371,7 @@ $$ (2 + 4) * 10 $$
 
 ---
 
-#### Order of Operations
-
-> Please Excuse My Dear Aunt Sally
+#### [fit] Please Excuse My Dear Aunt Sally
 
 ---
 
@@ -394,12 +389,12 @@ var total = subtotal + shipping;  // 77
 ### String Operator
 
 ```javascript
-var first_name = 'Ivy';
-var last_name = 'Stone';
+var firstName = 'Ivy';
+var lastName = 'Stone';
 
-var full_name = first_name + ' ' + last_name;
+var fullName = firstName + ' ' + lastName;
 
-var greeting = 'Hello ' + full_name + '!';
+var greeting = 'Hello ' + fullName + '!';
 ```
 
 ^ There is just one string operator, the + symbol. It is used to join the strings on either side of it. There are many occasions where you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string **concatenation**.
@@ -420,6 +415,6 @@ buy = (5 > 3) && (2 < 4);     // logical operator
 
 ---
 
-## For Next Week...
+## For Next Week
 
 ^ _assignments/01-variables/_

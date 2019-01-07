@@ -1,13 +1,13 @@
-var my_variable = 'hello';
-var my_response = '';
+var myVariable = 'hello';
+var myResponse = '';
 
-switch (my_variable) {
-  case 'hello':
-    my_response = 'hi';
-    break;
-  default:
-    my_response = 'I\'m confused';
-    break;
+switch (myVariable) {
+case 'hello':
+  myResponse = 'hi';
+  break;
+default:
+  myResponse = 'I\'m confused';
+  break;
 }
 
-console.log('my_response: ' + my_response);
+console.log('myResponse: ' + myResponse);

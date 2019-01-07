@@ -2,14 +2,13 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
+
+## Document Object Model (DOM)
 
 ---
-
-# Document Object Model (DOM)
 
 ```html
 <html>
@@ -42,7 +41,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
+![DOM tree](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
 
 ^ This image shows the "DOM Tree" of the previous code. Every element, attribute, and piece of text in the HTML is represented by its own DOM node. At the top of the tree a document node is added; it represents the entire page.
 
@@ -50,7 +49,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
+![DOM tree](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
 
 ^ _Element Nodes_ are represented in green in this graphic. HTML elements describe the structure of an HTML page.
 
@@ -58,7 +57,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
+![DOM tree](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
 
 ^ _Attribute Nodes_ are represented in orange in this graphic. The opening tags of HTML elements can carry attributes and these are represented by attribute nodes in the DOM tree.
 
@@ -66,7 +65,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
+![DOM tree](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/06-domtree.png)
 
 ^ _Text Nodes_ are represented in the purplish color in this graphic. Once you have accessed an element node, you can then reach the text within that element. This is stored in its own text node.
 
@@ -78,7 +77,6 @@ theme: Plain Jane, 3
 
 1. Locate the node that represents the element you want to work with.
 1. Use its text content, child elements, and attributes
-
 
 ^ Accessing and updating the DOM tree involves two steps: _(clicks)_
 
@@ -102,9 +100,7 @@ theme: Plain Jane, 3
 
 ---
 
-### Step 1: Access the Elements
-
-#### Multiple Node Elements
+### Step 1: Access the Elements: Multiple Node Elements
 
 - `getElementsByClassName()`
 - `getElementsByTagName()`
@@ -120,9 +116,7 @@ theme: Plain Jane, 3
 
 ---
 
-### Step 1: Access the Elements
-
-#### Traversing Between Element Nodes
+### Step 1: Access the Elements: Traversing Between Element Nodes
 
 - `parentNode`
 - `previousSibling` / `nextSibling`
@@ -167,7 +161,7 @@ document.getElementById('one');
 
 ---
 
-## Methods That Select Individual Elements
+## Methods That Select Individual Elements: `querySelector`
 
 ```javascript
 // object.method('parameter')
@@ -268,15 +262,15 @@ for (var i = 0; i < hot_items.length; i++) {
 
 ---
 
-## Adding Elements Using DOM Manipulation
+## Adding Elements Using DOM Manipulation: `appendChild`
 
 ```javascript
-var new_el   = document.createElement('li');
-var new_text = document.createTextNode('beer');
-new_el.appendChild(new_text);
+var newElement   = document.createElement('li');
+var newText = document.createTextNode('beer');
+newElement.appendChild(newText);
 
 var position = document.getElementsByTagName('ul')[0];
-position.appendChild(new_el);
+position.appendChild(newElement);
 ```
 
 ---
@@ -297,7 +291,7 @@ position.appendChild(new_el);
 
 ---
 
-## Removing Elements Via DOM Manipulation
+## Removing Elements Via DOM Manipulation: `removeChild`
 
 ```javascript
 var remove_el = document.getElementsByTagName('li')[3];
@@ -340,4 +334,4 @@ document.getElementById('one').getAttribute('class');
 
 ---
 
-## For next week...
+## For next week

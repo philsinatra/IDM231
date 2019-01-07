@@ -1,5 +1,5 @@
-var feedback_el = document.getElementById('feedback');
-var username_el = document.getElementById('username');
+var feedbackEl = document.getElementById('feedback');
+var usernameEl = document.getElementById('username');
 
 function checkUserName() {
   // 'this' refers to the owner of a function.
@@ -10,12 +10,12 @@ function checkUserName() {
   console.groupEnd();
 
   if (this.value.length < 5) {
-    feedback_el.textContent = 'Username must be at least 5 characters.';
-    feedback_el.classList.add('danger');
+    feedbackEl.textContent = 'Username must be at least 5 characters.';
+    feedbackEl.classList.add('danger');
   } else {
-    feedback_el.textContent = '';
-    feedback_el.classList.remove('danger');
+    feedbackEl.textContent = '';
+    feedbackEl.classList.remove('danger');
   }
 }
 
-username_el.onblur = checkUserName;
+usernameEl.onblur = checkUserName;

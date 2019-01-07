@@ -2,18 +2,15 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
+
+## ABCs of Programming
 
 ---
 
-# ABCs of Programming
-
----
-
-## What is a Script?
+## What is a Script
 
 - recipes
 - handbooks
@@ -26,10 +23,6 @@ theme: Plain Jane, 3
 ^ (_click_) Large companies often provide handbooks for new employees that contain procedures to follow in certain situations.
 
 ^ (_click_) Mechanics often refer to car repair manuals when servicing models they are not familiar with. These manuals contain a series of tests to check the key functions of the car are working, along with details of how to fix any issues that arise.
-
----
-
-## What is a Script?
 
 ^ Scripts are made up of instructions a computer can follow step by step. A browser may use different parts of the script depending on how the user interacts with the web page. Scripts can run different sections of the code in response to the situation around them.
 
@@ -51,7 +44,7 @@ theme: Plain Jane, 3
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/02-flowchart.png)
+![script concept flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/02-flowchart.png)
 
 ^ Once you know the **goal** of a script, you can work out the individual tasks needed to achieve it. This high level view of the tasks can be represented by a flowchart.
 
@@ -61,12 +54,12 @@ theme: Plain Jane, 3
 
 ### Steps Within a Task
 
-- Step 1 Remove used bedding
-- Step 2 Wipe all surfaces
-- Step 3 Vacuum floors
-- Step 4 Fit new bedding
-- Step 5 Remove used towels and soaps
-- Step 6 Clean bathroom
+- Step 1: Remove used bedding
+- Step 2: Wipe all surfaces
+- Step 3: Vacuum floors
+- Step 4: Fit new bedding
+- Step 5: Remove used towels and soaps
+- Step 6: Clean bathroom
 
 ^ Each individual task may be broken down into a sequence of steps. When you're ready to code the script, these steps can then be translated into individual lines of code.
 
@@ -137,7 +130,7 @@ if (current_hour > 18) {
 </html>
 ```
 
-^ When the browser comes across a <script>element, it stops to load the script and then checks to see if it needs to do anything. This has implications for where `<script>` elements should be placed, and can affect the loading time of pages.
+^ When the browser comes across a `<script>` element, it stops to load the script and then checks to see if it needs to do anything. This has implications for where `<script>` elements should be placed, and can affect the loading time of pages.
 
 ---
 
@@ -173,7 +166,7 @@ var HOURNOW;
 
 ---
 
-### Statements
+### Statements in Javascript
 
 ```javascript
 var hourNow = today.getHour();
@@ -210,4 +203,4 @@ var hourNow = today.getHour();  // Find the current hour
 
 ---
 
-## For Next Week...
+## For Next Week

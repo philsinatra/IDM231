@@ -2,14 +2,11 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
 
----
-
-# Functions, Objects and Methods
+## Functions, Objects and Methods
 
 ^ Browsers require very detailed instructions about what we want them to do. Therefore, complex scripts can run to hundreds (even thousands) of lines. Programmers use functions, methods, and objects to organize their code.
 
@@ -109,7 +106,7 @@ sayHello();
 
 ---
 
-### Function Parameters
+### Working With Parameters
 
 ```javascript
 function getArea(width, height) {
@@ -144,7 +141,7 @@ var wall_two = getArea(8, 5);
 
 ---
 
-### Betting Multiple Values Out of a Function
+### Getting Multiple Values Out of a Function
 
 ```javascript
 function getSize(width, height, depth) {
@@ -164,7 +161,7 @@ var sizes = getSize(3,2,3);
 
 ---
 
-### Betting Multiple Values Out of a Function
+### Return Arrays
 
 ```javascript
 function getSize(width, height, depth) {
@@ -197,24 +194,13 @@ function getArea(width, height) {
   var area = width * height;
   return area;
 }
+
+console.log(area); // ⚠️ ERROR
 ```
 
 ^ When a variable is created inside a function using the var keyword, it can only be used in that function. It is called a local variable or function-level variable. It is said to have local scope or function-level scope. It cannot be accessed outside of the function in which it was declared.
 
 ^ In this example, `area` is a local variable, only available within the `getArea` function.
-
----
-
-#### Local Variables
-
-```javascript
-function getArea(width, height) {
-  var area = width * height;
-  return area;
-}
-
-console.log(area); // ⚠️ ERROR
-```
 
 ^ `area` is only available within the `getArea()` function. Trying to access it outside of that function will produce an error.
 
@@ -277,23 +263,6 @@ var hotel = {
 
 ^ Like variables and named functions, properties and methods have a name and a value. In an object, that name is called a **key** (the keys in this example would be name, rooms etc). The value of a property can be a string, number, boolean, array, or even another object. The value of a method is always a function (`checkAvailability`).
 
----
-
-### Object Example
-
-```javascript
-var hotel = {
-  name: 'Hurley\'s Inn',
-  rooms: 40,
-  booked: 25,
-  gym: true,
-  roomTypes: ['twin', 'double', 'suite'],
-  checkAvailability: function() {
-    return this.rooms - this.booked;
-  }
-};
-```
-
 ^ The object is the curly braces and their contents. In this example, the object is stored in a variable called `hotel`, so you would refer to it as the **hotel** object. Separate each key from its value using a colon. Separate each property and method with a comma, except the last value.
 
 ---
@@ -309,7 +278,7 @@ var roomsFree = hotel.checkAvailability();
 
 ---
 
-### Accessing Properties & Methods
+### Accessing Properties & Methods (bracket syntax)
 
 ```javascript
 var hotelName = hotel['name'];
@@ -352,7 +321,7 @@ function Hotel(name, rooms, booked) {
 
 ---
 
-### Creating Many Objects
+### Creating More Objects
 
 ```javascript
 var hurleyHotel = new Hotel('Hurley\'s', 40, 25);
@@ -513,4 +482,4 @@ var aztecHotel = new Hotel('Aztec', 120, 77);
 
 ---
 
-## For next week...
+## For next week

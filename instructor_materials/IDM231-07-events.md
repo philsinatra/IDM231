@@ -2,20 +2,17 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 3
+theme: Dark Mode
 
 # IDM 231
-## Scripting for<br>Interactive Digital Media I
 
----
-
-# Events
+## Events
 
 ^ When you browse the web, your browser registers different types of events. It's the browser's way of saying, "Hey, this just happened." Your script can then respond to these events. Scripts often respond to these events by updating the content of the web page (via the Document Object Model) which makes the page feel more interactive.
 
 ---
 
-## Events
+## JavaScript Events
 
 - Interactions create events
 - Events trigger code
@@ -29,7 +26,7 @@ theme: Plain Jane, 3
 
 ---
 
-## Types of Events
+## Types of UI Events
 
 | UI Event | Description |
 | -------- | ----------- |
@@ -41,7 +38,7 @@ theme: Plain Jane, 3
 
 ---
 
-## Types of Events
+## Types of Keyboard Events
 
 | Keyboard Event | Description |
 | -------------- | ----------- |
@@ -51,7 +48,7 @@ theme: Plain Jane, 3
 
 ---
 
-## Types of Events
+## Types of Mouse Events
 
 | Mouse Event | Description |
 | ----------- | ----------- |
@@ -112,16 +109,8 @@ theme: Plain Jane, 3
 
 ```javascript
 // element.event = code
-element.onevent = functionName;
-```
+// element.onevent = functionName;
 
-^ Here is the syntax to bind an event to an element using an event handler, and to indicate which function should execute when that event fires.
-
----
-
-## Traditional DOM Event Handlers
-
-```javascript
 function checkUserName() {
   // code to check user name
 }
@@ -129,6 +118,8 @@ function checkUserName() {
 var el = document.getElementById('username');
 el.onblur = checkUserName;
 ```
+
+^ Here is the syntax to bind an event to an element using an event handler, and to indicate which function should execute when that event fires.
 
 ^ Notice how the event handler is the last line. When a function is called, the parentheses that follow its name tell the JavaScript interpreter to "run this code now". We don't want the code to run until the event fires, so the parenthesis are omitted from the event handler on the last line.
 
@@ -157,7 +148,7 @@ myDiv.addEventListener('click', myFunction, false);
 
 ---
 
-## Event Listeners Continued
+## Event Listeners (continued)
 
 ```javascript
  function checkUserName() {
@@ -212,4 +203,4 @@ el.addEventListener('blur', function() {
 
 ---
 
-## For Next Week...
+## For Next Week
