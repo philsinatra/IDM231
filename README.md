@@ -5,5 +5,3 @@ All assignments are outlined and should be submitted on [Drexel Blackboard](http
 ## Github Username Help:
 
 - [@philsinatra](https://github.com/philsinatra)
-- [@jervo](https://github.com/jervo)
-- [@findes](https://github.com/findes)
