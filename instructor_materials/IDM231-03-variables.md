@@ -41,7 +41,7 @@ $$
 
 ^ A variable is a good name for this concept because the data stored in a variable can change (or vary) each time a script runs.
 
-^ The use of variables to represent numbers or other kinds of data is very similar to the concept of algebra (where letters are used to represent numbers). There is one key difference, however. The equals sign does something very different in programming.
+^ The use of variables to represent numbers or other kinds of data is very similar to concepts used in algebra (where letters are used to represent numbers). There is one key difference, however. The equals sign does something very different in programming.
 
 ---
 
@@ -77,11 +77,11 @@ var my_quantity;
 
 ```javascript, [.highlight: 5-8]
 var quantity;
-var sub_total;
+var subTotal;
 var grandTotal;
 
 quantity = 3;
-subtotal = 7;
+subTotal = 7;
 grandTotal = 10;
 ```
 
@@ -117,11 +117,9 @@ myOtherNumber = 5272;
 negativeNumber = -23678;
 ```
 
-^ For tasks that involve counting or calculating sums, you will use numbers 0-9. For example, five thousand, two hundred and seventy-two would be written 5272 (note there is no comma between the thousands and
-the hundreds). You can also have negative numbers (such as -23678) and decimals (three quarters is written as 0.75).
+^ For tasks that involve counting or calculating sums, you will use numbers 0-9. For example, five thousand, two hundred and seventy-two would be written 5272 (note there is no comma between the thousands and the hundreds). You can also have negative numbers (such as -23678) and decimals (three quarters is written as 0.75).
 
-^ Numbers are not only used for things like calculators; they
-are also used for tasks such as determining the size of the screen, moving the position of an element on a page, or setting the amount of time an element should take to fade in.
+^ Numbers are not only used for things like calculators; they are also used for tasks such as determining the size of the screen, moving the position of an element on a page, or setting the amount of time an element should take to fade in.
 
 ---
 
@@ -147,14 +145,14 @@ myBoolean = true;
 
 ---
 
-## Naming Rules
+## Naming Rules: Variables
 
 1. Must begin with a letter, dollar sign ($), or an underscore ( \_ )
 1. Can not contain dashes or periods
 1. Can not use _keywords_ or _reserved_ words
-1. Variable are case sensitive
-1. Names should describe the info they will represent
-1. Use _camelCase_ or _under\_scores_ for multi word variables
+1. Are case sensitive
+1. Should describe the info they will represent
+1. Should use _camelCase_ or _under\_scores_ for multi word variables
 
 ---
 
@@ -179,6 +177,64 @@ console.log('myVariable: ' + myVariable);
 ^ Browsers that have a console have a console object, which has several methods that your script can use to display data in the console. The `console.log()` method can write data from a script to the console. Such notes can tell you how far a script has run and what values it has received. Console messages are logged to the console window inside of the browsers Devtools. Let's look at some examples.
 
 ^ _(examples/variables/variables.html)_
+
+---
+
+## Defining Variables: ES6 Enhancements
+
+^ ES6 refers to the official specification for JavaScript that was released in 2015. It offers some enhancements to core JavaScript concepts that we should look at. We'll talk more about the specifics of ES6 later in the term, but let's focus on some of the key ingredients ES6 includes as we touch on each topic, starting with how we declare our variables.
+
+---
+
+### Declaring A Variable
+
+- `var`
+- `let`
+- `const`
+
+^ We said earlier that before we can use a variable, we have to declare it using the keyword _(click)_ `var`, which tells the JavaScript interpreter that we're creating a variable.
+
+^ There are two alternatives to the `var` keyword, _(click)_ `let` and _(click)_ `const`. The benefits of both of these will be more apparent next week when we talk about functions, but for now we're going to introduce both keywords and review their basic use.
+
+---
+
+### `let` Keyword
+
+```javascript
+var one = 1;
+one = 'one';
+
+let one = 1;
+one = 'one';
+one = .5 + .5;
+```
+
+^ When we assign a variable using either the `var` or `let` keyword, the value of that variable can change.
+
+---
+
+### `const` Keyword
+
+```javascript
+let one = 1;
+one = 'one';
+
+const one = 1;
+one = 'one'; // ⚠️ Syntax Error!
+```
+
+^ If we assign a variable using the `const` keyword, it is considered a _constant_, and its value can not be changed. This can be very helpful in writing our scripts if we have a value that is critical and we want to guarantee it is not changed accidentally as our scripts execute.
+
+---
+
+### Can I Use ES6
+
+- [https://caniuse.com/#feat=let](https://caniuse.com/#feat=let)
+- [https://caniuse.com/#feat=const](https://caniuse.com/#feat=const)
+
+^ The additional benefits of using `let` and `const` over `var` will be revealed as the term goes on, but for now you should know that these options exist, and are to be favored over using `var` whenever possible.
+
+^ _(examples/variables/es6.html)_
 
 ---
 
@@ -287,6 +343,8 @@ console.log(colors[3]);
 
 ^ To access a value from an array, after the array name you specify the index number for that value inside square brackets. You can change the value of an item an array by selecting it and assigning it a new value just as you would any other variable (using the equals sign and the new value for that item).
 
+^ _(examples/variables/arrays.html)_
+
 ---
 
 ## Expressions
@@ -391,13 +449,58 @@ var total = subtotal + shipping;  // 77
 ```javascript
 var firstName = 'Ivy';
 var lastName = 'Stone';
-
 var fullName = firstName + ' ' + lastName;
-
 var greeting = 'Hello ' + fullName + '!';
 ```
 
 ^ There is just one string operator, the + symbol. It is used to join the strings on either side of it. There are many occasions where you may need to join two or more strings to create a single value. Programmers call the process of joining together two or more strings to create one new string **concatenation**.
+
+---
+
+### Concatenation vs Template Literals
+
+```javascript
+var firstName = 'Ivy';
+var lastName = 'Stone';
+var fullName = firstName + ' ' + lastName;
+var greeting = 'Hello ' + fullName + '!';
+```
+
+^ While we're at it, let's take a quick look at another ES6 enhancement. Using the plus sign to mix our variables into a string can (and will) become difficult and/or annoying. As these values integrate more and more variables and get more complex, possibly including multiple single/double quotes in a single output, our job defining these values becomes more difficult.
+
+---
+
+### Template Literals
+
+```javascript
+`string text ${expression} string text`
+```
+
+^ Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+
+^ Template literals are enclosed by the back-tick character instead of double or single quotes. Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (`${expression}`).
+
+---
+
+### Template Literals Example
+
+```javascript
+var firstName = 'Ivy';
+var lastName = 'Stone';
+var fullName = firstName + ' ' + lastName;
+var greeting = 'Hello ' + fullName + '!';
+//
+var fullName = `${firstName} ${lastName}`;
+var greeting = `Hello ${fullname}!`;
+```
+
+---
+
+### Can I Use Template Literals
+
+- [https://caniuse.com/#feat=template-literals](https://caniuse.com/#feat=template-literals)
+
+^ _(examples/variables/es6.html)_
 
 ---
 
@@ -412,6 +515,8 @@ buy = (5 > 3) && (2 < 4);     // logical operator
 ```
 
 ^ As we saw, there are other operators that are used for comparison and logic related tasks. We'll get into those in more detail later.
+
+^ _(examples/variables/operators.html)_
 
 ---
 

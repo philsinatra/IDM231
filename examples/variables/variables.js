@@ -21,31 +21,3 @@ console.log(mySwitch);
 
 mySwitch = false;
 console.log(mySwitch);
-
-// Arrays
-var myArray = [];
-
-console.log(myArray.length);
-myArray[0] = 'hello';
-myArray[1] = 'world';
-console.log(myArray.length);
-console.log(myArray[0]);
-
-var myOtherArray = ['red', 'white', 'blue'];
-console.log(myOtherArray.length);
-console.log(myOtherArray[0]);
-
-// Operators
-console.log('title: ' + title);
-console.log('message: ' + message);
-
-console.group('Page Message Details');
-console.log('title: ' + title);
-console.log('message: ' + message);
-console.groupEnd();
-
-mySwitch = true;
-console.log('mySwitch: ' + mySwitch);
-
-mySwitch = false;
-console.log('mySwitch: ' + mySwitch);
