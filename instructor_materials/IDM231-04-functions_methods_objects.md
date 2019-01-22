@@ -24,89 +24,51 @@ function updateMessage() {
   el.textContent = msg;
   return msg;
 }
+
+updateMessage();
 ```
 
 ^ Functions let you group a series of statements together to perform a specific task. If different parts of a script repeat the same task, you can reuse the function rather than repeating the same set of statements.
-
----
-
-### Function Name
-
-```javascript
-updateMessage();
-```
 
 ^ When you group tasks together into a function, you need to give your function a name, which should describe the task it is performing. When you ask it to perform the task it's known as **calling** the function.
 
 ---
 
-### Function Structure
+[.code-highlight: 2-4]
+
+## Function Structure
 
 ```javascript
 function updateMessage() {
-  // function code here
+  var el = document.getElementById('message');
+  el.textContent = msg;
+  return msg;
 }
+
+updateMessage();
 ```
 
 ^ The steps the function needs to perform in are packaged up in a code block. A code block consists of one ore more statements contained within curly braces.
 
 ---
 
-### Function Parameters
+## Function Parameters
 
 ```javascript
 function updateMessage(name, message) {
-  // function code here
+  console.log('Hello ' + name + ', ' + message);
+  // or with ES6
+  console.log(`Hello ${name}, ${message}`);
 }
+
+updateMessage();
 ```
 
 ^ Some functions need to be provided with information in order to achieve a given task. Pieces of information passed to a function are known as **parameters**.
 
 ---
 
-### Function Return
-
-```javascript
-function updateMessage(name, message) {
-  return message + ' ' + name + '!';
-}
-```
-
-^ When you write a function and you expect it to provide you with an answer, the response is known as a **return value**.
-
----
-
-### Anatomy of a Function
-
-```javascript
-function sayHello() {
-  console.log('Hello!');
-}
-```
-
-^ You declare a function using the **function** keyword.
-
-^ You give the function a **name** (sometimes called an **identifier**) followed by parentheses.
-
-^ The **statements** that perform the task sit in a code block, inside the curly braces.
-
----
-
-### Calling a Function
-
-```javascript
-function sayHello() {
-  console.log('Hello!');
-}
-
-sayHello();
-```
-
-^ Once you declare a function, you can execute all the statements between the curly braces with a single line of code. This is know as **calling the function**. This is done by using the function name followed by parentheses. You can call the same function as many times as you want within the same Javascript file.
-
----
-
-### Working With Parameters
+## Working With Parameters
 
 ```javascript
 function getArea(width, height) {
@@ -121,32 +83,79 @@ var wall_height = 5;
 getArea(wall_width, wall_height);
 ```
 
-^ Sometimes a function needs specific information to perform a task. In such cases, when you declare the function you give it **parameters**. Inside the function, the parameters act like variables.
+^ Inside the function, the parameters act like variables.
 
 ---
 
-### Getting Values Out of a Function
+## Function Return
+
+```javascript
+function updateMessage(name, message) {
+  const newMessage = `Hello ${name}, ${message}`;
+  return newMessage;
+}
+
+let myMessage = updateMessage('Phil', 'Welcome to my script!');
+
+console.log(myMessage); // Hello Phil, Welcome to my script!
+```
+
+^ When you write a function and you expect it to provide you with an answer, the response is known as a **return value**. Using the `return` keyword, the specified value is returned from inside the function, back to the placeholder that originally called the function. When a return statement is encountered, the execution of the function immediately stops and the current value of the returned variable is extracted. If the function contains more lines of code, they are not executed.
+
+---
+
+## Anatomy of a Function
+
+```javascript
+function sayHello() {
+  console.log('Hello!');
+}
+```
+
+^ Let's review. You declare a function using the **function** keyword.
+
+^ You give the function a **name** (sometimes called an **identifier**) followed by parentheses.
+
+^ The **statements** that perform the task sit in a code block, inside the curly braces.
+
+---
+
+## Calling a Function
+
+```javascript
+function sayHello() {
+  console.log('Hello!');
+}
+
+sayHello();
+```
+
+^ Once you declare a function, you can execute all the statements between the curly braces with a single line of code. This is know as **calling the function**. This is done by using the function name followed by parentheses. You can call the same function as many times as you want within the same Javascript file.
+
+---
+
+## Getting Values Out of a Function
 
 ```javascript
 function getArea(width, height) {
-  var area = width * height;
+  const area = width * height;
   return area;
 }
 
-var wall_one = getArea(3, 5);
-var wall_two = getArea(8, 5);
+let wall = getArea(3, 5); // 15
+let wall = getArea(8, 5); // 40
 ```
 
-^ Some functions return information to the code that called them. `wall_one` will be equal to 15, while `wall_two` will hold the value 40. This also demonstrates how the same function can be used to perform the same steps with different values.
+^ Some functions return information to the code that called them. _wall1_ will be equal to 15, while _wall2_ will hold the value 40. This also demonstrates how the same function can be used to perform the same steps with different values.
 
 ---
 
-### Getting Multiple Values Out of a Function
+## Getting Multiple Values Out of a Function
 
 ```javascript
 function getSize(width, height, depth) {
-  var area = width * height;
-  var volume = width * height * depth;
+  const area = width * height;
+  const volume = width * height * depth;
 
   // Does this work?
   // Why or why not?
@@ -154,40 +163,40 @@ function getSize(width, height, depth) {
   return volume;
 }
 
-var sizes = getSize(3,2,3);
+let sizes = getSize(3,2,3);
 ```
 
 ^ Someone tell me, how could we get more than one value out of a function?
 
 ---
 
-### Return Arrays
+## Return Arrays
 
 ```javascript
 function getSize(width, height, depth) {
-  var area = width * height;
-  var volume = width * height * depth;
-  var sizes = [area, volume];
+  const area = width * height;
+  const volume = width * height * depth;
+  const sizes = [area, volume];
   return sizes;
 }
 
-var area_one = getSize(3,2,3)[0];
-var volume_one = getSize(3,2,3)[1];
+let area_one = getSize(3,2,3)[0];
+let volume_one = getSize(3,2,3)[1];
 ```
 
 ^ Functions can return more than one value using an array.
 
 ---
 
-### Variable Scope
+## Variable Scope
 
-#### Local vs Global
+### Local vs Global vs Block
 
 ^ The location where you declare a variable will affect where it can be used within your code. If you declare it within a function, it can only be used within that function This is known as the variable's **scope**.
 
 ---
 
-#### Local Variables
+### Local Scope
 
 ```javascript
 function getArea(width, height) {
@@ -206,7 +215,7 @@ console.log(area); // ⚠️ ERROR
 
 ---
 
-#### Global Variables
+### Global Scope
 
 ```javascript
 function getArea(width, height) {
@@ -214,11 +223,11 @@ function getArea(width, height) {
   return area;
 }
 
-var wall_size = getArea(3,2);
-console.log(wall_size); // 6
+var wallSize = getArea(3,2);
+console.log(wallSize); // 6
 
-wall_size = 'dog';
-console.log(wall_size); // dog
+wallSize = 'dog';
+console.log(wallSize); // dog
 ```
 
 ^ If you create a variable outside of a function, then it can be used anywhere within the script. It is called a **global** variable and has **global scope**.
@@ -227,9 +236,42 @@ console.log(wall_size); // dog
 
 ---
 
-#### Variable Scope Examples
+### `var` Does Not Have Block Scope
 
-^ _examples/functions/scope.html_
+```javascript
+var x = 1;
+
+function myFunction() {
+  x = 2;
+}
+
+console.log(x); // 2
+```
+
+^ Variables declared with the `var` keyword do not have block scope, which means if a variable is introduced within a code block, those variables are scoped to the containing function, and the effects of setting them persist beyond the block itself.
+
+---
+
+### `let` & `const` Do Have Block Scope
+
+```javascript
+let x = 1;
+
+function myFunction() {
+  let x = 2;
+  console.log(x); // 2
+}
+
+console.log(x); // 1
+```
+
+^ By contrast, variables declared with `let` and `const` do have block scope. The `x = 2` is limited in scope to the block in which it was defined. (This example is using `let`, but the rules are the same for `const`)
+
+---
+
+### Variable Scope Examples
+
+^ _examples/functions/scope.js_
 
 ---
 
@@ -249,7 +291,7 @@ console.log(wall_size); // dog
 ### Object Example
 
 ```javascript
-var hotel = {
+const hotel = {
   name: 'Hurley\'s Inn',
   rooms: 40,
   booked: 25,
@@ -267,28 +309,28 @@ var hotel = {
 
 ---
 
-### Accessing Properties & Methods
+## Accessing Properties & Methods
 
 ```javascript
-var hotelName = hotel.name;
-var roomsFree = hotel.checkAvailability();
+const hotelName = hotel.name;
+const roomsFree = hotel.checkAvailability();
 ```
 
 ^ You access the properties and methods of an object using what's called _dot notation_. Use the name of the object, followed by a period, then the name of the property or method you want to access.
 
 ---
 
-### Accessing Properties & Methods (bracket syntax)
+## Accessing Properties & Methods (bracket syntax)
 
 ```javascript
-var hotelName = hotel['name'];
+const hotelName = hotel['name'];
 ```
 
 ^ You can also access the properties of an object (but not its methods) using square bracket syntax. This syntax should generally be avoided.
 
 ---
 
-### Updating an Object
+## Updating an Object
 
 ```javascript
 hotel.name = 'Aztec';
@@ -302,7 +344,7 @@ delete hotel.name;
 
 ---
 
-### Creating Many Objects
+## Creating Many Objects
 
 ```javascript
 function Hotel(name, rooms, booked) {
@@ -321,24 +363,24 @@ function Hotel(name, rooms, booked) {
 
 ---
 
-### Creating More Objects
+## Creating More Objects
 
 ```javascript
-var hurleyHotel = new Hotel('Hurley\'s', 40, 25);
-var aztecHotel = new Hotel('Aztec', 120, 77);
+const hurleyHotel = new Hotel('Hurley\'s', 40, 25);
+const aztecHotel = new Hotel('Aztec', 120, 77);
 ```
 
 ^ You create **instances** of the object using the construction function. The **new** keyword followed by a call to the function creates a new object. The properties of each object are given as arguments to the function.
 
 ---
 
-### Objects Example
+## Objects Example
 
-^ _examples/objects/objects.html_
+^ _examples/objects/objects.js_
 
 ---
 
-### Built-In Objects
+## Built-In Objects
 
 ^ Browsers come with a set of built-in objects that represent things like the browser window and the current web page shown in that window. These built-in objects act like a toolkit for creating interactive web pages.
 
@@ -434,7 +476,7 @@ var aztecHotel = new Hotel('Aztec', 120, 77);
 
 ^ Creates new text node
 
-^ _examples/objects/objects\_document.html_
+^ _examples/objects/objects\_document.html|js_
 
 ---
 
@@ -478,7 +520,7 @@ var aztecHotel = new Hotel('Aztec', 120, 77);
 
 ^ Like find and replace, it takes one value that should be found, and another to replace it (by default, it only replaces the first match it finds)
 
-^ _examples/objects/objects\_string.html_
+^ _examples/objects/objects\_string.js_
 
 ---
 
