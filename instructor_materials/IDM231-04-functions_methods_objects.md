@@ -188,6 +188,66 @@ let volume_one = getSize(3,2,3)[1];
 
 ---
 
+## Arrow Functions
+
+```javascript
+const myFunction = function() {
+  // ...
+}
+
+const myFunction = () => {
+  // ...
+}
+```
+
+^ ES6 introduced a new syntax for the anatomy of a function, the _arrow function_. Visually, the arrow function simplifies the syntax, making it shorter, which is a welcome change.
+
+---
+
+### Arrow Functions - Single Statement
+
+```javascript
+const myFunction = function() {
+  doSomething();
+}
+
+// Becomes
+
+const myFunction = () => doSomething();
+```
+
+^ If the function of the body contains a single statement, you can omit the brackets and write it all on a single line.
+
+---
+
+### Arrow Function - Parameters
+
+```javascript
+const myFunction = function(param1, param2) {
+  doSomething(param1, param2);
+};
+
+// Becomes
+
+const myFunction = (param1, param2) => doSomthing(param1, param2);
+```
+
+^ Parameters are passing in the parentheses.
+
+---
+
+### Arrow Functions - Single Parameter
+
+```javascript
+const myFunction = param => doSomething(param);
+```
+
+^ If you have one (and only one) parameter, you can omit the parentheses completely.
+
+^ Because of the short syntax, arrow functions encourage the use of small functions, which is one of our goals when writing clean, concise scripts.
+
+---
+
 ## Variable Scope
 
 ### Local vs Global vs Block

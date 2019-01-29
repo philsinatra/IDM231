@@ -1,5 +1,5 @@
-var myVariable = 'hello';
-var myResponse = '';
+const myVariable = 'hello';
+let myResponse;
 
 switch (myVariable) {
 case 'hello':
@@ -10,4 +10,4 @@ default:
   break;
 }
 
-console.log('myResponse: ' + myResponse);
+console.log('myResponse: ', myResponse);

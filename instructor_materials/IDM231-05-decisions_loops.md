@@ -212,15 +212,15 @@ else {
 ## If...Else Alternatives
 
 ```javascript
-var title = '';
-var level = 'one';
+const level = 'one';
+let title;
 
 if (level === 'one') {
   title = 'Level 1';
 } else if (level === 'two') {
   title = 'Level 2';
 } else if ((level === 'three') || (level === 'four')) {
-  title = 'Test';
+  title = 'Level 3 or 4';
 }
 ```
 
@@ -239,7 +239,7 @@ switch (level) {
     title = 'Level 2';
     break;
   default:
-    title = 'Test';
+    title = 'Level not 1 or 2';
     break;
 }
 ```
@@ -253,9 +253,9 @@ switch (level) {
 ## Checking Existence
 
 ```javascript
-var my_element = document.getElementById('header');
+const myElement = document.getElementById('header');
 
-if (my_element) {
+if (myElement) {
   // Element exists, let's do something
 }
 ```
@@ -267,9 +267,9 @@ if (my_element) {
 ## Checking Existence - Else
 
 ```javascript
-var my_element = document.getElementById('header');
+const myElement = document.getElementById('header');
 
-if (my_element) {
+if (myElement) {
   // Element exists, let's do something
 } else {
   // Element does not exist, do something else specific.
@@ -287,7 +287,7 @@ if (my_element) {
 ### For Loop
 
 ```javascript
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
@@ -296,30 +296,14 @@ for (var i = 0; i < 10; i++) {
 
 ---
 
-### While Loop
-
-```javascript
-var cars = ["BMW", "Volvo", "Saab", "Ford"];
-var i = 0;
-
-while (cars[i]) {
-  console.log(cars[i]);
-  i++;
-}
-```
-
-^ If you do not know how many times the code should run, you can use a `while` loop. Here the condition can be something other than a counter and the code will continue to loop for as long as the condition is **true**..
-
----
-
 ### Loop Counters
 
 ```javascript, [.highlight: 1, 5-7]
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-var i = 0;
+let i = 0;
 i < 10;
 i++
 ```
@@ -351,6 +335,90 @@ i++
 ^ When the statements have been finished, the variable `i` is incremented by 1.
 
 ^ When the condition is no longer **true**, the loop ends. The script moves on to the next line of code.
+
+---
+
+### While Loop
+
+```javascript
+const cars = ['BMW', 'Volvo', 'Saab', 'Ford'];
+let i = 0;
+
+while (cars[i]) {
+  console.log(cars[i]);
+  i++;
+}
+```
+
+^ If you do not know how many times the code should run, you can use a `while` loop. Here the condition can be something other than a counter and the code will continue to loop for as long as the condition is **true**.
+
+---
+
+### `forEach` Loop
+
+```javascript
+const cars = ['BMW', 'Volvo', 'Saab', 'Ford'];
+
+cars.forEach(function(car) {
+  console.log('car: ', car);
+});
+```
+
+^ Another style of loop that is common, especially when you don't necessarily know the total number of items being looped over is the `forEach` loop. Theh `forEach()` method executes a provided function once for each array element.
+
+---
+
+#### forEach Loop With Arrow Function Syntax
+
+```javascript
+const cars = ['BMW', 'Volvo', 'Saab', 'Ford'];
+
+cars.forEach(car => {
+  console.log('car: ', car);
+});
+```
+
+---
+
+### `for...of` Statement
+
+```javascript
+let numbers = [10, 20, 30];
+
+for (let value of numbers) {
+  console.log(value)
+}
+```
+
+^ The `for...of` statement creates a loop iterating over iterable objects (strings, arrays, node lists etc).
+
+---
+
+### `for...in` Statement
+
+```javascript
+const myObject = {a: 1, b: 2, c: 3 };
+
+for (const property in myObject) {
+  console.log(`myObject.${property}: ${myObject[property]}`);
+}
+```
+
+^ The `for...in` statement loops over the properties of an object. This syntax is not recommended for use with arrays. Its most practical use is for debugging purposes, being an easy way to check the properties of an object.
+
+---
+
+## So Many Options
+
+- `while`
+- `do-while`
+- `for`
+- `forEach()`
+- `map()`
+- `for...in`
+- `for...of`
+
+^ With so many options, it may seem overwhelming and difficult to choose which type of loop is best. The answer will differ based on the situation. Use whatever syntax best suits your needs, and keep things as simple as possible.
 
 ^ _examples/decisions/loops.html_
 
