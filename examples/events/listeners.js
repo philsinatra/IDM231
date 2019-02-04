@@ -1,5 +1,5 @@
-var feedbackEl = document.getElementById('feedback');
-var usernameEl = document.getElementById('username');
+const feedbackEl = document.getElementById('feedback');
+const usernameEl = document.getElementById('username');
 
 function checkUserName() {
   console.group('checkUserName()');

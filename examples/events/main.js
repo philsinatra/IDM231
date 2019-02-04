@@ -10,7 +10,7 @@ window.addEventListener('load', init, false);
 /**
  * Focus/Blur
  */
-var inputEl = document.createElement('input');
+const inputEl = document.createElement('input');
 inputEl.type = 'text';
 inputEl.id = 'myInput';
 
@@ -38,7 +38,7 @@ document.body.removeChild(inputEl);
  * Click Mouse Event
  */
 
-var buttonEl = document.createElement('button');
+const buttonEl = document.createElement('button');
 buttonEl.innerHTML = 'Hello Button';
 document.body.appendChild(buttonEl);
 
@@ -58,7 +58,7 @@ document.body.removeChild(buttonEl);
 
 // -----------------------------------------------
 
-var anchorEl = document.createElement('a');
+const anchorEl = document.createElement('a');
 anchorEl.innerHTML = 'This is my new anchor';
 anchorEl.href = 'http://google.com';
 anchorEl.target = '_blank';
@@ -84,8 +84,8 @@ document.body.removeChild(anchorEl);
 
 // -----------------------------------------------
 
-var divEl = document.createElement('div');
-var size = 500 + 'px';
+const divEl = document.createElement('div');
+const size = 500 + 'px';
 divEl.id = 'myDiv';
 divEl.style.width = size;
 divEl.style.height = size;
@@ -115,14 +115,14 @@ document.body.removeChild(divEl);
  * Keyboard events
  */
 
-var textareaEl = document.createElement('textarea');
+const textareaEl = document.createElement('textarea');
 textareaEl.setAttribute('rows', 20);
 textareaEl.style.width = '400px';
 document.body.appendChild(textareaEl);
 
 function charCount(whichElement) {
-  var textEntered = whichElement.value;
-  var counter = textEntered.length;
+  const textEntered = whichElement.value;
+  const counter = textEntered.length;
   return counter;
 }
 
@@ -132,12 +132,12 @@ function getKeyCode(e) {
 
 textareaEl.addEventListener('keypress', getKeyCode, false);
 
-buttonEl = document.createElement('button');
-buttonEl.innerHTML = 'Count Textarea Characters';
+const myButton = document.createElement('button');
+myButton.innerHTML = 'Count Textarea Characters';
 
-document.body.appendChild(buttonEl);
+document.body.appendChild(myButton);
 
-buttonEl.addEventListener(
+myButton.addEventListener(
   'click',
   function() {
     var outputMessage =
@@ -150,18 +150,18 @@ buttonEl.addEventListener(
 );
 
 document.body.removeChild(textareaEl);
-document.body.removeChild(buttonEl);
+document.body.removeChild(myButton);
 
 /**
  * Scroll Event
  */
 
-var lorem =
+const lorem =
 	'When clicking an element that is nested in other elements, before your click reaches its destination (target element) it will trigger the click event of each ancestor element first. Starting at the top with the global window object, the click event trickles down parent by parent in what is called the capture phase. This continues until the event arrives at its intended target element. When the event can finally be handled by its intended target, we enter the target phase. The target phase is really just the very end of the capture phase and the very beginning of the bubble phase. Once the target phase is complete, and the target element handles the event however it wishes, we begin the third and final phase of the event flow, called the bubble phase. In this phase, the event “bubbles” up from the event target back through all of its parent elements up to the global window object where it stops. This is essentially the opposite of the capture phase.';
 
-for (var i = 0; i < 20; i++) {
-  var pEl = document.createElement('p');
-  var textNode = document.createTextNode(lorem);
+for (let i = 0; i < 20; i++) {
+  const pEl = document.createElement('p');
+  const textNode = document.createTextNode(lorem);
   pEl.appendChild(textNode);
   document.body.appendChild(pEl);
 }
@@ -183,7 +183,7 @@ function resizeHandler() {
   console.groupEnd();
 
   // What is something we could do here?
-  var breakSmall = 600;
+  const breakSmall = 600;
   if (window.innerWidth >= breakSmall) {
     document.body.classList.add('medium');
   } else {

@@ -115,7 +115,7 @@ function checkUserName() {
   // code to check user name
 }
 
-var el = document.getElementById('username');
+const el = document.getElementById('username');
 el.onblur = checkUserName;
 ```
 
@@ -132,7 +132,7 @@ el.onblur = checkUserName;
 ```javascript
 element.addEventListener('event', functionName [, Boolean]);
 
-var myDiv = document.getElementById('myDiv');
+const myDiv = document.getElementById('myDiv');
 myDiv.addEventListener('click', myFunction, false);
 ```
 
@@ -151,11 +151,11 @@ myDiv.addEventListener('click', myFunction, false);
 ## Event Listeners (continued)
 
 ```javascript
- function checkUserName() {
+function checkUserName() {
   // code to check user name
 }
 
-var el = document.getElementById('username');
+const el = document.getElementById('username');
 el.addEventListener('blur', checkUserName, false);
 ```
 

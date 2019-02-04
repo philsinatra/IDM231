@@ -1,70 +1,51 @@
-(function() {
-  var hotItems = document.querySelectorAll('li.hot');
+const setTemps = () => {
+  const hotItems = document.querySelectorAll('li.hot');
   if (hotItems) {
-    var hotItemsLength = hotItems.length;
-    // for (var i = 0; i < hotItemsLength; i++) {
-    //   hotItems[i].className = 'cool';
+    // hotItems.forEach(item => {
+    //   item.className = 'cool';
+    // });
+
+    // for (let i = 0; i < hotItems.length; i++) {
+    //   if (hotItems[i].innerHTML !== 'balsamic vinegar') {
+    //     hotItems[i].className = 'cool';
+    //   }
     // }
 
-    for (var i = 0; i < hotItemsLength; i++) {
-      if (hotItems[i].innerHTML !== 'balsamic vinegar') {
-        hotItems[i].className = 'cool';
+    // Let's use a forEach loop to do the same thing.
+    hotItems.forEach(item => {
+      if (item.innerHTML !== 'balsamic vinegar') {
+        item.className = 'cool';
       }
-    }
+    });
   }
+};
 
-  function showIngredientCounters() {
-    var ingredients = document.querySelectorAll('#ingredients li');
-    var ingredientsLength = ingredients.length;
-    for (var i = 0; i < ingredientsLength; i++) {
-      ingredients[i].innerHTML =
-        ingredients[i].innerHTML + ' <b>[' + i + ']</b>';
-    }
-    // That's sloppy... How can we fix?
+const showIngredientKeys = () => {
+  const ingredients = document.querySelectorAll('#ingredients li');
+  const ingredientsLength = ingredients.length;
+
+  for (let i = 0; i < ingredientsLength; i++) {
+    const item = ingredients[i];
+    item.innerHTML = `${item.innerHTML} <b>[${i}]</b>`;
   }
+};
 
-  function addIngredient(newIngredient) {
-    var ingredientList = document.getElementById('ingredients');
-    var newItem = document.createElement('li');
-    newItem.innerHTML = newIngredient;
-    // newItem.innerHTML = '<b>' + newIngredient + '</b>';
-    ingredientList.appendChild(newItem);
+const addIngredient = (ingredient) => {
+  const ingredients = document.getElementById('ingredients');
+  const listItem = document.createElement('li');
+  listItem.innerHTML = ingredient;
+  ingredients.appendChild(listItem);
 
-    // How do we update the numbers?
-    showIngredientCounters();
-  }
+  // Add function call to init()
+  // How do we update the key numbers to include our new item?
+  showIngredientKeys();
+  // Comment out the call in the init.
+};
 
-  var ingredients = document.querySelectorAll('#ingredients li');
-  if (ingredients) {
-    showIngredientCounters();
-    // Add a new item to the list.
-    addIngredient('chocolate');
-  }
+const init = () => {
+  setTemps();
+  // showIngredientKeys();
+  addIngredient('chocolate');
+};
 
-  function showStepsCounters() {
-    var steps = document.querySelectorAll('#steps li');
-    // var steps = document.querySelectorAll('#steps li span');
-    var stepsLength = steps.length;
-    for (var i = 0; i < stepsLength; i++) {
-      steps[i].innerHTML = steps[i].innerHTML + '<b>[' + i + ']</b>';
-      // steps[i].innerHTML = '<b>[' + i + ']</b>';
-    }
-  }
-
-  function addStep(setDetails) {
-    var stepList = document.getElementById('steps');
-    var newStep = document.createElement('li');
-    newStep.innerHTML = setDetails;
-    // newStep.innerHTML = setDetails + ' <span></span>';
-    stepList.appendChild(newStep);
-    showStepsCounters();
-  }
-
-  // Now add 'span' elements to HTML
-
-  var steps = document.querySelectorAll('#steps li');
-  if (steps) {
-    showStepsCounters();
-    addStep('sleep');
-  }
-})();
+window.onload = init();

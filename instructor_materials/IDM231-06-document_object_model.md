@@ -151,7 +151,7 @@ theme: Dark Mode
 document.getElementById('one');
 ```
 
-^ `getElementById()` is the quickest and most efficient way to access an element because no two elements cna share the same value for their `id` attribute.
+^ `getElementById()` is the quickest and most efficient way to access an element because no two elements can share the same value for their `id` attribute.
 
 ^ Here, `document` refers to the _document_ object. You always have to access individual elements via the _document_ object.
 
@@ -206,9 +206,9 @@ document.querySelectorAll('li[class="hot"]')
 ### The `item()` method
 
 ```javascript
-var elements = document.getElementsByClassName('hot');
+const elements = document.getElementsByClassName('hot');
 if (elements.length >= 1) {
-  var firstItem = elements.item(0);
+  const firstItem = elements.item(0);
 }
 ```
 
@@ -219,9 +219,9 @@ if (elements.length >= 1) {
 ### Array Syntax
 
 ```javascript
-var elements = document.getElementsByClassName('hot');
+const elements = document.getElementsByClassName('hot');
 if (elements.length >= 1) {
-  var firstItem = elements[0];
+  const firstItem = elements[0];
 }
 ```
 
@@ -232,8 +232,8 @@ if (elements.length >= 1) {
 ## Repeating Actions For An Entire Node List
 
 ```javascript
-var hot_items = document.querySelectorAll('li.hot');
-for (var i = 0; i < hot_items.length; i++) {
+const hot_items = document.querySelectorAll('li.hot');
+for (let i = 0; i < hot_items.length; i++) {
   hot_items[i].className = 'cool';
 }
 ```
@@ -265,11 +265,11 @@ for (var i = 0; i < hot_items.length; i++) {
 ## Adding Elements Using DOM Manipulation: `appendChild`
 
 ```javascript
-var newElement   = document.createElement('li');
-var newText = document.createTextNode('beer');
+const newElement = document.createElement('li');
+const newText = document.createTextNode('beer');
 newElement.appendChild(newText);
 
-var position = document.getElementsByTagName('ul')[0];
+const position = document.getElementsByTagName('ul')[0];
 position.appendChild(newElement);
 ```
 
@@ -294,10 +294,10 @@ position.appendChild(newElement);
 ## Removing Elements Via DOM Manipulation: `removeChild`
 
 ```javascript
-var remove_el = document.getElementsByTagName('li')[3];
-var parent_el = remove_el.parentNode;
+const removeElement = document.getElementsByTagName('li')[3];
+const parentElement = removeElement.parentNode;
 
-parent_el.removeChild(remove_el);
+parentElement.removeChild(removeElement);
 ```
 
 ---

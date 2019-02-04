@@ -51,11 +51,12 @@ Thumbs.db
 *.jpg
 *.png
 *.gif
-/assignments
+assignments
+ECMAScript.pdf
 graphics
-node_modules
 instructor_materials/images
+instructor_setup.md
+node_modules
+ocmenu
 workshop
 zodiac
-ECMAScript.pdf
-instructor_setup.md

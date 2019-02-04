@@ -1,95 +1,89 @@
-(function() {
+const init = () => {
   console.log('Accessing Elements!');
 
-  var example01 = document.querySelector('.example01');
-  var example01Text = example01.textContent;
+  const example = document.querySelector('.example01');
+  const exampleText = example.textContent;
 
-  console.group('Example 01');
-  console.log('example01: ' + example01);
-  console.log('example01Text: ' + example01Text);
-
-  // You don't HAVE to store each piece in a variable:
-  console.log(document.querySelector('.example01').textContent);
+  console.group('Example');
+  console.log('example', example);
+  console.log('exampleText', exampleText);
   console.groupEnd();
 
-  // Work with the HTML content:
-  console.group('Example 01 HTML Manipulation');
-  console.log(document.querySelector('ul').innerHTML);
-  console.log(document.querySelector('ul').textContent);
-  console.groupEnd();
-
-  var firstUl = document.querySelector('ul');
-  var newListItem = document.createElement('li');
-  var newTextInfo = document.createTextNode('Howdy!');
+  const firstUl = document.querySelector('ul');
+  const newListItem = document.createElement('li');
+  const newTextInfo = document.createTextNode('Howdy!');
 
   newListItem.appendChild(newTextInfo);
   firstUl.appendChild(newListItem);
-  firstUl.removeChild(example01);
+  firstUl.removeChild(example);
 
-  // Should we move all of this into a function?
+  // Wrap all of this into a function.
   // function updateFirstList() {
-  //   var firstUl = document.querySelector('ul');
-  //   var newListItem = document.createElement('li');
-  //   var newTextInfo = document.createTextNode('Howdy!');
+  //
+  // const updateFirstList = () => {
+  //   const firstUl = document.querySelector('ul');
+  //   const newListItem = document.createElement('li');
+  //   const newTextInfo = document.createTextNode('Howdy!');
 
   //   newListItem.appendChild(newTextInfo);
   //   firstUl.appendChild(newListItem);
-  //   firstUl.removeChild(example01);
-  // }
+  //   firstUl.removeChild(example);
+  // };
 
-  // updateFirstList()
+  // updateFirstList();
 
-  var hdWorkingWithAttributes = document.getElementById(
-    'working_with_attributes'
-  );
+  const wwa = document.getElementById('working_with_attributes');
   console.group('Working With Attributes');
-  console.log(hdWorkingWithAttributes.innerHTML);
-  console.log(hdWorkingWithAttributes.getAttribute('class'));
+  console.log(wwa.innerHTML);
+  console.log(wwa.getAttribute('class'));
+  console.log(wwa.classList);
+  console.log(wwa.className);
   console.groupEnd();
 
-  hdWorkingWithAttributes.setAttribute('class', 'testing class2');
-  console.log(hdWorkingWithAttributes.getAttribute('class'));
-  hdWorkingWithAttributes.removeAttribute('id');
-  hdWorkingWithAttributes.removeAttribute('class');
+  wwa.setAttribute('class', 'testing class2');
+  console.log(wwa.className);
+  wwa.removeAttribute('id');
+  wwa.removeAttribute('class');
 
-  var myID = document.getElementById('myID');
-  console.group('Access By ID');
+  const myID = document.getElementById('myID');
+  console.group('Access by ID');
   console.log(myID.innerHTML);
   console.groupEnd();
 
-  var myList = document.getElementById('myList');
-  var firstItem = myList.querySelector('li');
-  console.log(firstItem.innerHTML);
-  // Notice how this returned only the first list item's HTML. Why?
-
-  var listItems = myList.querySelectorAll('li');
-  console.group('myList Items');
+  const listItems = document.querySelectorAll('li');
+  console.group('List Items');
   console.log(listItems);
   console.groupEnd();
 
-  var listItemsLength = listItems.length;
-  console.log('listItemsLength: ' + listItemsLength);
+  const listItemsLength = listItems.length;
+  console.log('listItemsLength', listItemsLength);
 
-  for (var i = 0; i < listItemsLength; i++) {
-    console.log('listItem[' + i + ']: ' + listItems[i].innerHTML);
-  }
+  // for (let i = 0; i < listItemsLength; i++) {
+  //   console.log(listItems[i], listItems[i].innerHTML);
+  // }
 
-  var noteElements = document.getElementsByClassName('note');
-  console.log(noteElements);
+  listItems.forEach(item => {
+    console.log(item, item.innerHTML);
+  });
+
+  let noteElements = document.getElementsByClassName('note');
+  console.log('noteElements', noteElements);
 
   noteElements = document.getElementsByTagName('li');
-  console.log(noteElements);
-  // That's a big list. How can we trim that down to only the 'note' elements?
+  console.log('noteElements', noteElements);
 
-  var noteList = document.querySelector('.notes');
+  // Trim this list to only the note elements
+  const noteList = document.querySelector('.notes');
   noteElements = noteList.getElementsByTagName('li');
-  console.log(noteElements);
+  console.log('noteElements', noteElements);
 
   noteElements = document.querySelectorAll('li');
-  console.log(noteElements);
-  // Same problem?
+  console.log('noteElements', noteElements);
 
-  // Different solution:
+  // Same problem, different solution
+
   noteElements = document.querySelectorAll('.notes li');
-  console.log(noteElements);
-})();
+  console.log('noteElements', noteElements);
+};
+
+window.onload = init();
