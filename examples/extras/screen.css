@@ -1,0 +1,127 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		font-size: 150%;
+	}
+}
+
+[hidden] {
+	display: none;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 3rem;
+}
+
+main h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+main p {
+	margin-bottom: 1.5rem;
+}
+
+#intro {
+	background-color: lightblue;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+@keyframes introBounce {
+	0% {
+		left: 3rem;
+		top: 3rem;
+	}
+
+	33% {
+		left: 33%;
+		top: 33%;
+	}
+
+	66% {
+		left: 66%;
+		top: 3rem;
+	}
+
+	100% {
+		left: 90%;
+		top: 33%;
+	}
+}
+
+@keyframes fadeOut {
+	to {
+		opacity: 0;
+	}
+}
+
+#intro div {
+	animation: introBounce 2s linear forwards;
+	background-color: lightpink;
+	border-radius: 50%;
+	height: 200px;
+	left: 3rem;
+	position: relative;
+	top: 3rem;
+	width: 200px;
+}
+
+.fadeOut {
+	animation: fadeOut 1s ease-out forwards;
+}
+
+form {
+	margin: 3rem 0;
+}
+
+.controlgroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+label {
+	color: gray;
+	font-size: 60%;
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+}
+
+input[type="date"] {
+	padding: .5rem;
+}
+
+input[type="submit"] {
+	background-color: lightblue;
+	border: 0;
+	cursor: pointer;
+	padding: .5rem;
+	transition: background-color 300ms ease-in-out;
+	width: 100px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: lightpink;
+}
