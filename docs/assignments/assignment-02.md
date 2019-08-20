@@ -4,7 +4,7 @@ This page describes an assignment for this course. Due dates and submissions are
 
 ## Assignment 2: Functions, Methods & Objects
 
-1. Complete [_Assignment 2: Functions, Methods & Objects_](http://digm.drexel.edu/crs/IDM231/assignments/screens/assessment_intro.php?assignment=2).
+1. Complete [_Assignment 2: Functions, Methods & Objects_](https://idm-hw.netlify.com/).
 
 Follow the instructions on screen and complete the assignment questions. When you have answered all of the questions and are satisfied with your score, select the submit button at the bottom of the page. You'll receive a confirmation number that you must enter in [Drexel Blackboard](https://learn.dcollege.net/) under _Assignment 2: Functions, Methods & Objects_.
 
