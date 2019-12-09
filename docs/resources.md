@@ -2,14 +2,18 @@
 
 ## Lecture Slides
 
-- [01 Introduction](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-01-introduction.pdf)
-- [02 Programming](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-02-programming.pdf)
-- [03 Variables](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-03-variables.pdf)
-- [04 Functions, Methods and Objects](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-04-functions_methods_objects.pdf)
-- [05 Decisions and Loops](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-05-decisions_loops.pdf)
-- [06 Document Object Model (DOM)](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-06-document_object_model.pdf)
-- [07 Events](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-07-events.pdf)
-- [08 ES6](http://digm.drexel.edu/crs/IDM231/presentations/IDM231-08-es6.pdf)
+- [01-introduction.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/01-introduction.pdf)
+- [02-variables.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/02-variables.pdf)
+- [03-functions.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/03-functions.pdf)
+- [03-objects.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/03-objects.pdf)
+- [04-decisions.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/04-decisions.pdf)
+- [04-loops.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/04-loops.pdf)
+- [05-DOM.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/05-DOM.pdf)
+- [06-events.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/06-events.pdf)
+- [07-timers.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/07-timers.pdf)
+- [08-async.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/08-async.pdf)
+- [09-storage.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/09-storage.pdf)
+- [10-json.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/10-json.pdf)
 
 ## Reading Material
 

@@ -200,7 +200,3 @@ el.addEventListener('blur', function() {
 ## Examples
 
 ^ _(examples/events/index.html)_
-
----
-
-## For Next Week

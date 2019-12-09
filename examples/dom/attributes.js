@@ -1,14 +1,14 @@
 (function() {
-  var firstItem = document.getElementById('one');
+  const firstItem = document.getElementById('one');
 
   if (firstItem) {
     if (firstItem.hasAttribute('class')) {
-      var attr = firstItem.getAttribute('class');
+      const attr = firstItem.getAttribute('class');
       console.log('attr: ' + attr);
 
       // Add the value of the attribute after the list.
 
-      var el = document.createElement('p');
+      const el = document.createElement('p');
       el.innerHTML = 'The first item has a class name: <b>' + attr + '</b>';
       document.body.appendChild(el);
 
@@ -17,11 +17,11 @@
     }
   }
 
-  var fourthItem = document.getElementsByTagName('li')[3];
+  const fourthItem = document.getElementsByTagName('li')[3];
   if (fourthItem) fourthItem.setAttribute('class', 'cool');
 
   // Remove an attribute
-  var thirdItem = document.getElementById('three');
+  const thirdItem = document.getElementById('three');
   if (thirdItem) {
     if (thirdItem.hasAttribute('class')) {
       thirdItem.removeAttribute('class');

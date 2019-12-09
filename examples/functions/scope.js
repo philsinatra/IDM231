@@ -1,6 +1,6 @@
 // New Quokka file
 //
-var name = 'Phil';
+const name = 'Phil';
 
 function logName() {
   console.log(name);
@@ -12,12 +12,12 @@ function getName(name) {
   return name;
 }
 
-var myName = getName(name);
+const myName = getName(name);
 console.log(myName);
 
 // --------------------------------------------------------
 
-var color = 'red';
+let color = 'red';
 
 function logColor() {
   color = 'blue';

@@ -331,7 +331,3 @@ document.getElementById('one').getAttribute('class');
 ^ The available methods/properties are:
 
 ^ Let's look at some examples _(examples/dom/attributes.html)_
-
----
-
-## For next week

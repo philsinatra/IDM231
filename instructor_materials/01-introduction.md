@@ -6,7 +6,135 @@ theme: Dark Mode
 
 # IDM 231
 
-## ABCs of Programming
+## Introduction
+
+---
+
+## About This Course
+
+- [Drexel Learn](https://learn.dcollege.net/webapps/login/)
+- [Course Repository](https://github.com/philsinatra/IDM231)
+- [Final Project](https://github.com/philsinatra/IDM231/blob/master/docs/assignments/assignment-final.md)
+
+^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
+
+---
+
+## JavaScript
+
+[^1]: Excerpt From: Flavio Copes. “The JavaScript Handbook.”
+
+^ JavaScript is one of the most popular programming languages in the world.
+
+^ Created 20 years ago, it's gone a very long way since its humble beginnings.
+
+^ Being the first - and the only - scripting language that was supported natively by web browsers, it simply stuck.
+
+^ In the beginnings, it was not nearly powerful as it is today, and it was mainly used for fancy animations and the marvel known at the time as DHTML.
+
+^ With the growing needs that the web platform demands, JavaScript had the responsibility to grow as well, to accommodate the needs of one of the most widely used ecosystems of the world.
+
+^ Many things were introduced in the platform, with browser APIs, but the language grew quite a lot as well.
+
+^ JavaScript is now widely used also outside of the browser. The rise of Node.js in the last few years unlocked backend development, once the domain of Java, Ruby, Python and PHP and more traditional server-side languages.”
+
+^ JavaScript is now also the language powering databases and many more applications, and it's even possible to develop embedded applications, mobile apps, TV sets apps and much more. What started as a tiny language inside the browser is now the most popular language in the world.
+
+^ Excerpt From: Flavio Copes. “The JavaScript Handbook.”
+
+---
+
+## JavaScript: A Basic Definition
+
+- high level
+- dynamic
+- dynamically typed
+- weakly typed
+- interpreted
+- mylti-paradigm
+
+^ **high level**: Javascript allows you to ignore the details of the machine where it's running. It manages memory automatically so you can focus on the code. It is highly flexible and extremely powerful.
+
+^ JavaScript has nothing to do with Java. It's a poor name choice but we have to live with it.
+
+---
+
+## JavaScript Versions
+
+### ECMAScript
+
+- ES3
+- ES5
+- ES6
+- ES7
+- ES8
+- ES2015
+- ES2106
+- ES2017
+- ECMAScript 2017
+- ECMAScript 2016
+- ECMAScript 2015
+
+^ ECMAScript is a standard up which JavaScript is based. It's often abbreviated to ES.
+
+---
+
+### Current ECMAScript Version
+
+#### ES2018
+
+^ Released in June 2018
+
+---
+
+## Coding Styles
+
+^ A coding style is a set of conventions used. It's an agreement with yourself and your team to keep consistency on a project. Having fixed rules on your code writing format helps a lot in order to have more readable and managed code.
+
+---
+
+### Popular Style Guides
+
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+- [AirBnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+^ There are quite a few available, these are 2 of the more commonly used ones. It's up to you to follow one or create your own.
+
+---
+
+### White Space
+
+^ JavaScript does not consider white space meaningful. Use whitespace to your advantage to make your code more meaningful. As an example, I like to always use 2 spaces to indent code.
+
+---
+
+### Case Sensitive
+
+```javascript
+const something = '';
+
+const Somthing = '';
+```
+
+^ JavaScript is case sensitive
+
+---
+
+### Comments
+
+```javascript
+/* */
+
+//
+```
+
+^ There are two types of comments in JavaScript.
+
+---
+
+### Reserved Words
+
+- [W3C Reserved Words List](https://www.w3schools.com/js/js_reserved.asp)
 
 ---
 
@@ -139,68 +267,3 @@ if (current_hour > 18) {
 ^ Like any new language, there are new words to learn (the vocabulary) and rules for how these can be put together (the grammar and syntax of the language).
 
 ^ Web browsers (and computers in general) approach tasks in a very different way than a human might. Your instructions need to reflect how computers get things done.
-
----
-
-### Statements
-
-```javascript
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-```
-
-^ A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a **statement**. Statements should end with a semicolon.
-
----
-
-### Case Sensitivity
-
-```javascript
-var hourNow;
-var HourNow;
-var HOURNOW;
-```
-
-^ JavaScript is case sensitive so `hourNow` means something different to `HourNow` or `HOURNOW`.
-
----
-
-### Statements in Javascript
-
-```javascript
-var hourNow = today.getHour();
-
-if (hourNow > 18) {
-  greeting = 'Good evening';
-} else {
-  greeting = 'Welcome';
-}
-```
-
-^ Statements are instructions and each one starts on a new line. A statement is an individual instruction that the computer should follow. Each one should start on a new line and end with a semicolon. This makes your code easier to read and follow. The semicolon also tells the JavaScript interpreter when a step is over, indicating that it should move to the next step.
-
-^ Statements can be organized into code blocks Some statements are surrounded by curly braces; these are known as **code blocks**. The closing curly brace is not followed by a semicolon. Above, each code block contains one statement related to what the current time is. Code blocks will often be used to group together many more statements. This helps programmers organize their code and makes it more readable.
-
----
-
-### Comments
-
-```javascript
-/*
-  This script displays a greeting to the user
-  based upon the current time.
-  It is an example from JavaScript & jQuery book.
-*/
-
-var today = new Date();         // Create a new date object
-var hourNow = today.getHour();  // Find the current hour
-```
-
-^ You should write comments to explain what your code does. They help make your code easier to read and understand. This can help you and others who read your code. JavaScript includes two types of comment styles: multi-line and single-line.
-
-^ Good use of comments will help you if you come back to your code after several days or months. They also help those who are new to your code.
-
----
-
-## For Next Week

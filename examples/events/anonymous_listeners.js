@@ -19,6 +19,14 @@ function checkUserName(minLength) {
   }
 }
 
-usernameEl.addEventListener('blur', function() {
-  checkUserName(5);
-}, false);
+// usernameEl.addEventListener('blur', function() {
+//   checkUserName(5);
+// }, false);
+
+usernameEl.addEventListener(
+  'blur',
+  () => {
+    checkUserName(5);
+  },
+  false
+);

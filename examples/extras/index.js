@@ -9,11 +9,11 @@ const init = () => {
     soundPositive: new Audio('media/positive8.mp3')
   };
 
-  const playSound = (whichSound) => {
+  const playSound = whichSound => {
     whichSound.play();
   };
 
-  const hideElement = (el) => {
+  const hideElement = el => {
     el.setAttribute('aria-hidden', true);
     el.hidden = true;
   };
@@ -27,8 +27,7 @@ const init = () => {
         window.setTimeout(() => {
           resolve();
         }, 2000);
-      else
-        reject(Error('fade out not applied'));
+      else reject(Error('fade out not applied'));
     });
 
     promiseFadeOut.then(() => {
@@ -44,7 +43,7 @@ const init = () => {
     hideElement(introElement);
   }
 
-  const handleBirthdayForm = (event) => {
+  const handleBirthdayForm = event => {
     event.preventDefault();
 
     const birthdayInput = document.getElementById('birthday');

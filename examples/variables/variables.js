@@ -1,12 +1,12 @@
 // Introduction
-var price = 5;
-var quantity = 14;
-var total = price * quantity;
+const price = 5;
+const quantity = 14;
+const total = price * quantity;
 
 console.log(total);
 
-var title = 'Our Special Offers';
-var message = 'Welcome to our page. Here is a message.';
+const title = 'Our Special Offers';
+const message = 'Welcome to our page. Here is a message.';
 
 console.log(title);
 console.log(message);
@@ -16,7 +16,7 @@ console.log(title);
 console.log(message);
 console.groupEnd();
 
-var mySwitch = true;
+let mySwitch = true;
 console.log(mySwitch);
 
 mySwitch = false;
