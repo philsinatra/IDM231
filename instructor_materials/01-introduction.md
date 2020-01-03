@@ -44,6 +44,10 @@ theme: Dark Mode
 
 ---
 
+![100%](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/languages-used.png)
+
+---
+
 ## JavaScript: A Basic Definition
 
 - high level
@@ -204,9 +208,9 @@ const Somthing = '';
 ## Creating a Basic Script
 
 ```javascript
-var today = new Date();
-var current_hour = today.getHours();
-var greeting = "Welcome!";
+const today = new Date();
+const current_hour = today.getHours();
+const greeting = 'Welcome!';
 
 if (current_hour > 18) {
   greeting = 'Good evening!';
