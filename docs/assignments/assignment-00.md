@@ -14,8 +14,7 @@ This assignment focuses on getting setup and preparing for your final project.
     - Be professional when choosing your domain name, you'll be using it for the remainder of your college career and probably beyond [Inappropriate Domain Name Examples](http://www.boredpanda.com/worst-domain-names/).
 
 1. Register a [Github](https://github.com) user account.
-1. Download and install [Sublime Text](https://www.sublimetext.com/3) (or the text editor of your choice) on your personal development computer.
-1. Join the [Drexel IDM Slack Workspace](idm-drexel.slack.com) and the IDM231 channel.
+1. Download and install [Visual Studio Code](https://code.visualstudio.com) (or the text editor of your choice) on your personal development computer.
 
 ### Content Preparation
 
