@@ -210,7 +210,7 @@ const Somthing = '';
 ```javascript
 const today = new Date();
 const current_hour = today.getHours();
-const greeting = 'Welcome!';
+let greeting = 'Welcome!';
 
 if (current_hour > 18) {
   greeting = 'Good evening!';
