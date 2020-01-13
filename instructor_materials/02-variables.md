@@ -381,6 +381,10 @@ myArray.push(4);
 
 // add at the beginning
 myArray.unshift(0);
+
+// Using ES6
+let arrayOne = ['1','2','3'];
+let arrayTwo = [...arrayOne, '4']
 ```
 
 ---
@@ -407,6 +411,8 @@ myArray.splice(3,2); // get the 2 items starting from index 3
 const a = [1,2];
 const b = [3,4];
 a.concat(b); // 1,2,3,4
+// OR
+const c = [...a, ...b]; // 1,2,3,4
 ```
 
 ---
@@ -439,7 +445,11 @@ a.reverse(); // 3,2,11,10,1
 ### Copy an Existing Array
 
 ```javascript
+const a = [1, 2, 3]
+//
 const b = Array.from(a);
+// ES6
+const b = [...a]
 ```
 
 ---
