@@ -84,7 +84,7 @@ function hello() {
 const a = 'test'
 ```
 
-^ Variables declared with `var` or `let` can be changed later in the program, and reassigned. Once a `const` is initialized, its value cna never be changed, and it can't be reassigned to a different value.
+^ Variables declared with `var` or `let` can be changed later in the program, and reassigned. Once a `const` is initialized, its value can never be changed, and it can't be reassigned to a different value.
 
 ^ Modern JavaScript developers might choose to always use `const` for variables that don't need to be reassigned later in the program.
 
@@ -400,7 +400,7 @@ a.shift();
 
 // at a random position
 myArray.splice(0, 2); // ge the first 2 items
-myArray.splice(3,2); // get the 2 items starting from index 3
+myArray.splice(3, 2); // get the 2 items starting from index 3
 ```
 
 ---
