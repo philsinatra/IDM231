@@ -125,7 +125,7 @@ Floats:
 
 "Another string"
 
-'I\m' a developer'
+'I\'m a developer'
 
 'A' + 'string'
 ```

@@ -281,7 +281,7 @@ function getArea(width, height) {
   return area;
 }
 
-const wallSize = getArea(3,2);
+let wallSize = getArea(3,2);
 console.log(wallSize); // 6
 
 wallSize = 'dog';
