@@ -7,9 +7,8 @@
       console.log('attr: ' + attr);
 
       // Add the value of the attribute after the list.
-
       const el = document.createElement('p');
-      el.innerHTML = 'The first item has a class name: <b>' + attr + '</b>';
+      el.innerHTML = `The first item has a class name: <b>${attr}</b>`;
       document.body.appendChild(el);
 
       // Change the attribute value

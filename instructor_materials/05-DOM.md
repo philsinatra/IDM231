@@ -167,7 +167,7 @@ document.getElementById('one');
 // object.method('parameter')
 document.getElementById('one');
 
-document.querySelector('.one');
+document.querySelector('#one');
 ```
 
 ^ `querySelector()` is more flexible because its parameter is a CSS selector, which means it can be used to accurately target many more elements.
@@ -207,6 +207,7 @@ document.querySelectorAll('li[class="hot"]')
 
 ```javascript
 const elements = document.getElementsByClassName('hot');
+
 if (elements.length >= 1) {
   const firstItem = elements.item(0);
 }
@@ -220,6 +221,7 @@ if (elements.length >= 1) {
 
 ```javascript
 const elements = document.getElementsByClassName('hot');
+
 if (elements.length >= 1) {
   const firstItem = elements[0];
 }
@@ -232,9 +234,10 @@ if (elements.length >= 1) {
 ## Repeating Actions For An Entire Node List
 
 ```javascript
-const hot_items = document.querySelectorAll('li.hot');
-for (let i = 0; i < hot_items.length; i++) {
-  hot_items[i].className = 'cool';
+const hotItems = document.querySelectorAll('li.hot');
+
+for (let i = 0; i < hotItems.length; i++) {
+  hotItems[i].className = 'cool';
 }
 ```
 
