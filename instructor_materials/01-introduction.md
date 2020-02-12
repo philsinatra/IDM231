@@ -2,15 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
-
-# IDM 231
+theme: Work, 1
 
 ## Introduction
-
----
-
-## About This Course
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)
 - [Course Repository](https://github.com/philsinatra/IDM231)
@@ -20,7 +14,7 @@ theme: Dark Mode
 
 ---
 
-## JavaScript
+> JavaScript
 
 [^1]: Excerpt From: Flavio Copes. “The JavaScript Handbook.”
 
@@ -67,46 +61,24 @@ theme: Dark Mode
 
 ### ECMAScript
 
-- ES3
-- ES5
-- ES6
-- ES7
-- ES8
-- ES2015
-- ES2106
-- ES2017
-- ECMAScript 2017
-- ECMAScript 2016
-- ECMAScript 2015
+- ES10
+- ES2019
+- ECMAScript 2019
 
 ^ ECMAScript is a standard up which JavaScript is based. It's often abbreviated to ES.
 
 ---
 
-### Current ECMAScript Version
-
-#### ES2018
-
-^ Released in June 2018
-
----
-
 ## Coding Styles
-
-^ A coding style is a set of conventions used. It's an agreement with yourself and your team to keep consistency on a project. Having fixed rules on your code writing format helps a lot in order to have more readable and managed code.
-
----
 
 ### Popular Style Guides
 
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 - [AirBnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
+^ A coding style is a set of conventions used. It's an agreement with yourself and your team to keep consistency on a project. Having fixed rules on your code writing format helps a lot in order to have more readable and managed code.
+
 ^ There are quite a few available, these are 2 of the more commonly used ones. It's up to you to follow one or create your own.
-
----
-
-### White Space
 
 ^ JavaScript does not consider white space meaningful. Use whitespace to your advantage to make your code more meaningful. As an example, I like to always use 2 spaces to indent code.
 
@@ -127,9 +99,12 @@ const Somthing = '';
 ### Comments
 
 ```javascript
-/* */
+/*
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Vivamus et erat orci. Etiam in dolor at arcu scelerisque.
+*/
 
-//
+// single line comment
 ```
 
 ^ There are two types of comments in JavaScript.
@@ -263,10 +238,6 @@ if (current_hour > 18) {
 ```
 
 ^ When the browser comes across a `<script>` element, it stops to load the script and then checks to see if it needs to do anything. This has implications for where `<script>` elements should be placed, and can affect the loading time of pages.
-
----
-
-## Basic JavaScript Instructions
 
 ^ Like any new language, there are new words to learn (the vocabulary) and rules for how these can be put together (the grammar and syntax of the language).
 

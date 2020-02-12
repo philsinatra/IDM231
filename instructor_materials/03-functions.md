@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Functions
+> Functions
 
 ^ Browsers require very detailed instructions about what we want them to do. Therefore, complex scripts can run to hundreds (even thousands) of lines. Programmers use functions, methods, and objects to organize their code.
 
@@ -324,9 +322,5 @@ console.log(x); // 1
 ```
 
 ^ By contrast, variables declared with `let` and `const` do have block scope. The `x = 2` is limited in scope to the block in which it was defined. (This example is using `let`, but the rules are the same for `const`)
-
----
-
-### Variable Scope Examples
 
 ^ _examples/functions/scope.js_

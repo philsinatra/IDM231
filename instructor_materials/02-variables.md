@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Variables
+> Variables
 
 ---
 
@@ -154,11 +152,21 @@ ${something}`
 
 ### Booleans
 
+```javascript
+true
+
+false
+```
+
 ^ There are two reserved words for booleans: `true` and `false`. There are many comparison operators that can be used to return one or the other. Later we'll see control structures using booleans to determine the flow of the program (if, while etc)
 
 ---
 
 ### `null`
+
+```javascript
+null
+```
 
 ^ `null` is a special value that indicates the absence of a value.
 
@@ -254,7 +262,7 @@ $$ (2 + 4) * 10 $$
 
 ---
 
-#### [fit] Please Excuse My Dear Aunt Sally
+> Please Excuse My Dear Aunt Sally
 
 ---
 
@@ -314,8 +322,6 @@ a || b
 ---
 
 ## Arrays
-
----
 
 ### Initialize an Array
 

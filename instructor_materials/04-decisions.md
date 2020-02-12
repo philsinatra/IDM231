@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Decisions
+![decision flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-flowchart.png)
 
 ^ Looking at a flowchart (for all but the most basic scripts), the code can take more than one path, which means the browser runs different code in different situations. Our goal now is to learn how to create and control the flow of data in your scripts to handle different situations.
 
@@ -15,10 +13,6 @@ theme: Dark Mode
 ^ Using the results of evaluations, you can decide which path your script should go down.
 
 ^ There are also many occasions where you will want to perform the same set of steps repeatedly.
-
----
-
-![decision flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-flowchart.png)
 
 ^ There are often several places in a script where decisions are made that determine which lines of code should be run next. Flowcharts can help you plan for these occasions.
 
@@ -200,10 +194,6 @@ else {
 ```
 
 ^ The _if else_ statement checks a condition. If it resolves to _true_ the first code block is executed. If the condition resolves to _false_, the second code block is run instead.
-
----
-
-## If...Else Examples
 
 ^ _examples/decisions/ifelse.html_
 

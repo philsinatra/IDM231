@@ -2,21 +2,16 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
 
-## Events
-
-^ When you browse the web, your browser registers different types of events. It's the browser's way of saying, "Hey, this just happened." Your script can then respond to these events. Scripts often respond to these events by updating the content of the web page (via the Document Object Model) which makes the page feel more interactive.
-
----
-
-## JavaScript Events
+# Events
 
 - Interactions create events
 - Events trigger code
 - Code responds to users
+
+^ When you browse the web, your browser registers different types of events. It's the browser's way of saying, "Hey, this just happened." Your script can then respond to these events. Scripts often respond to these events by updating the content of the web page (via the Document Object Model) which makes the page feel more interactive.
 
 ^ _click_ Events occur when users click or tap on a link, hover or swipe over an element, type on the keyboard, resize the window, or when the page they requested has loaded.
 
@@ -194,9 +189,5 @@ el.addEventListener('blur', function() {
 - BOM Events (browser object model)
 
 ^ Different types of events are grouped into the following categories. We will go through a bunch of examples of the different types over the next few example screens. Most are the result of the user interacting with the HTML.
-
----
-
-## Examples
 
 ^ _(examples/events/index.html)_

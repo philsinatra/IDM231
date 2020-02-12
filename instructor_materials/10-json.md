@@ -2,17 +2,11 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## JSON
+> JSON
 
 ^ JavaScript Object Notation (pronounced jason), is one of several data formats for transferring and storing data.
-
----
-
-## Examples of Data Formats
 
 ---
 
@@ -29,9 +23,9 @@ theme: Dark Mode
 
 ### CSV
 
-```csv
+```
 first,last
-Grace, Hopper
+Grace,Hopper
 ```
 
 ---

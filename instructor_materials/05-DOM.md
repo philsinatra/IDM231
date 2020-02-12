@@ -2,13 +2,10 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
 
-## Document Object Model (DOM)
-
----
+# Document Object Model (DOM)
 
 ```html
 <html>

@@ -2,17 +2,15 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Loops
+> Loops
 
 ^ Loops check a condition. If it returns **true**, a code block will run. Then the condition will be checked again and if it still returns **true**, the code block will run again. It repeats until the condition returns **false**.
 
 ---
 
-### For Loop
+## For Loop
 
 ```javascript
 for (let i = 0; i < 10; i++) {

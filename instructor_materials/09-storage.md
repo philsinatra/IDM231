@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Web Storage
+> Web Storage
 
 ^ Modern browsers offer web storage that can be processed by JavaScript on the browser. Web storage can be used to store approximately 5mb of data. When you use web storage, you can use either _local storage_ or _session storage_. The difference is that items in local storage persist between browser sessions, but items in session storage are removed when the browser session ends.
 
@@ -41,6 +39,4 @@ sessionStorage.removeItem('itemname');
 sessionStorage.clear();
 ```
 
----
-
-## Devtools
+^ _Show storage tab in devTools_

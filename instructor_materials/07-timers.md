@@ -2,15 +2,10 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
 
-## Timers
-
-^ When writing JavaScript code, you might want to delay the execution of a function. We'll explore how to schedule functions in the future.
-
----
+# Timers
 
 ## `setTimeout()`
 
@@ -19,6 +14,8 @@ setTimeout(() => {
   // run after 2 seconds
 }, 2000);
 ```
+
+^ When writing JavaScript code, you might want to delay the execution of a function. We'll explore how to schedule functions in the future.
 
 ^ With `setTimeout()`, you specify a callback function to execute later, and a value expressing how later you want it to run in milliseconds.
 

@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Asynchronicity in Programming
+> Asynchronicity in Programming
 
 ^ Computers are asynchronous by design. Asynchronous means that things can happen independently of the main program flow.
 
@@ -126,7 +124,7 @@ const checkIfItsDone = () => {
 
 ---
 
-## Async & Await
+> Async & Await
 
 ^ Async functions are a combination of promises and generators, basically a higher level abstraction over promises.
 

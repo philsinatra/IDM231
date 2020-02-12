@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 231: Scripting for IDM I
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 231
-
-## Objects & Methods
+> Objects & Methods
 
 ---
 
@@ -107,27 +105,21 @@ const aztecHotel = new Hotel('Aztec', 120, 77);
 
 ^ You create **instances** of the object using the construction function. The **new** keyword followed by a call to the function creates a new object. The properties of each object are given as arguments to the function.
 
----
-
-## Objects Example
-
 ^ _examples/objects/objects.js_
 
 ---
 
 ## Built-In Objects
 
-^ Browsers come with a set of built-in objects that represent things like the browser window and the current web page shown in that window. These built-in objects act like a toolkit for creating interactive web pages.
-
-^ As soon as a web page has loaded into the browser, these objects are available to use in your scripts. These built-in objects help you get a wide range of information such as the width of the browser window, the content of the main heading in the page, or the length of text a user entered into a form field. You access their properties or methods using dot notation, just like you would access the properties or methods of an object you had written yourself.
-
----
-
 ### Three Groups of Built-In Objects
 
 1. `window` object
-1. `document` object
-1. global objects
+2. `document` object
+3. global objects
+
+^ Browsers come with a set of built-in objects that represent things like the browser window and the current web page shown in that window. These built-in objects act like a toolkit for creating interactive web pages.
+
+^ As soon as a web page has loaded into the browser, these objects are available to use in your scripts. These built-in objects help you get a wide range of information such as the width of the browser window, the content of the main heading in the page, or the length of text a user entered into a form field. You access their properties or methods using dot notation, just like you would access the properties or methods of an object you had written yourself.
 
 ^ The three sets of built-in objects each offer different range of tools that help you write scripts for web pages.
 
