@@ -1,7 +1,10 @@
-todos:
-  ☐ add JSON example
-  ☐ add Babel notes
+TODO:
+
 Archive:
+  ✔ todos: @done(20-02-13 12:38)
+  ✔ update async example @done(20-02-13 12:38)
+  ✔ update storage example @done(20-02-13 12:38)
+  ✔ add JSON example @done(20-02-13 12:38)
   ✔ update PDF files on server @done(19-12-08 20:52) @project(todos)
   ✔ update documentation links to new PDF files on server @done(19-12-08 20:52) @project(todos)
   ✔ review/update assignments to ES6 @done(19-12-09 07:42) @project(todos)

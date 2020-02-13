@@ -25,7 +25,8 @@ body {
 
 main {
 	margin: 0 auto;
-	max-width: 900px;
+	/* 900px */
+	max-width: 56.25rem;
 	padding: 3rem;
 }
 
@@ -36,6 +37,7 @@ main h1 {
 }
 
 main p {
+	line-height: 1.4;
 	margin-bottom: 1.5rem;
 }
 

@@ -10,10 +10,10 @@
 - [04-loops.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/04-loops.pdf)
 - [05-DOM.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/05-DOM.pdf)
 - [06-events.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/06-events.pdf)
+- [07-storage.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/07-storage.pdf)
 - [07-timers.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/07-timers.pdf)
 - [08-async.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/08-async.pdf)
-- [09-storage.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/09-storage.pdf)
-- [10-json.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/10-json.pdf)
+- [08-json.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/08-json.pdf)
 
 ## Reading Material
 

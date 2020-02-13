@@ -145,3 +145,7 @@ const doSomething = async () => {
 ```
 
 ^ When you want to call this function, you prepend `await`, and the calling code will stop until the promise is resolved or rejected.
+
+^ _examples/async\_await/basics.js_
+
+^ _examples/async\_await/README.md_
