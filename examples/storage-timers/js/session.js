@@ -3,25 +3,23 @@
   const btnRemoveSession = document.getElementById('btnRemoveSession');
   const btnClearSession = document.getElementById('btnClearSession');
 
-  function handleSetSession() {
+  const key = 'IDM222SessionName';
+
+  const handleSetSession = () => {
     const inputName = document.getElementById('name');
-    console.log(inputName.value);
+    sessionStorage.setItem(key, inputName.value); // Set a session storage item
+    console.log(`sessionStorage.${key}:`, sessionStorage.getItem(key));
+  };
 
-    // Set a session storage item
-    sessionStorage.setItem('IDM222SessionName', inputName.value);
-  }
-  function handleRemoveSession() {
-    console.log('Remove sessionStorage: IDM222SessionName');
+  const handleRemoveSession = () => {
+    console.log(`Remove sessionStorage: ${key}`);
+    sessionStorage.removeItem(key); // Remove a session storage item
+  };
 
-    // Remove a session storage item
-    sessionStorage.removeItem('IDM222SessionName');
-  }
-  function handleClearSession() {
+  const handleClearSession = () => {
     console.log('Clear all sessionStorage');
-
-    // ⚠️ Remove all session storage items
-    sessionStorage.clear();
-  }
+    sessionStorage.clear(); // ⚠️ Remove all session storage items
+  };
 
   btnSetSession.addEventListener('click', handleSetSession, false);
   btnRemoveSession.addEventListener('click', handleRemoveSession, false);

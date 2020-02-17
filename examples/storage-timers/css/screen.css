@@ -1,0 +1,100 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: lightgray;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.clock {
+	align-items: center;
+	display: flex;
+	font-size: 2rem;
+	justify-content: center;
+	padding: .5rem;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+main {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+section {
+	background-color: white;
+	padding: 2rem;
+	min-width: 27.25rem;
+}
+
+form {
+	border-bottom: 1px solid gray;
+	margin-bottom: 1rem;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+label {
+	font-size: 0.8rem;
+}
+
+input[type="date"],
+input[type="text"] {
+	min-width: 18.75rem;
+}
+
+button {
+	background-color: lightgray;
+	border: 0;
+	display: block;
+	font-size: 1rem;
+	padding: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+	background-color: gray;
+	cursor: pointer;
+}
+
+button[type="submit"] {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	width: 8.125rem;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+	background-color: olivedrab;
+}
+
+.control-buttons {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(130px, 1fr));
+	gap: 1rem;
+}
+
+.feedback {
+	color: darkred;
+	font-size: 0.88rem;
+}

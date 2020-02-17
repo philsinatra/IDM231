@@ -1,8 +1,24 @@
 {
+  const showTime = () => {
+    const clockEl = document.querySelector('.clock');
+    const btnStopClock = document.getElementById('btnStopClock');
+
+    const timeInterval = setInterval(() => {
+      const today = new Date();
+      clockEl.innerHTML = today;
+    }, 1000);
+
+    btnStopClock.addEventListener('click', () => {
+      clearInterval(timeInterval);
+    });
+  };
+
+  window.addEventListener('load', showTime, false);
+
   // const form = document.getElementById('myForm');
   const form = document.forms['myForm'];
 
-  function handleFormSubmit(event) {
+  const handleFormSubmit = event => {
     // Prevent the form submission from refreshing the page.
     event.preventDefault();
 
@@ -31,12 +47,13 @@
       inputDate.focus();
       inputDate.value = '';
       feedbackDate.hidden = false;
-    } else {
-      feedbackDate.hidden = true;
-    }
+    } else feedbackDate.hidden = true;
 
-    // Once we have a valid date, what can we do?
-  }
+    // Once we have a valid date, what happens?
+    setTimeout(() => {
+      window.alert('✨ Valid date! ✨ ');
+    }, 1000);
+  };
 
   form.addEventListener('submit', handleFormSubmit, false);
   form.addEventListener('change', handleFormSubmit, false);

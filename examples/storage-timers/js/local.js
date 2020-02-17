@@ -3,25 +3,23 @@
   const btnRemoveLocal = document.getElementById('btnRemoveLocal');
   const btnClearLocal = document.getElementById('btnClearLocal');
 
-  function handleSetLocal() {
+  const key = 'IDM222LocalName';
+
+  const handleSetLocal = () => {
     const inputName = document.getElementById('name');
-    console.log(inputName.value);
+    localStorage.setItem(key, inputName.value); // Set a local storage item
+    console.log(`localStorage.${key}:`, localStorage.getItem(key));
+  };
 
-    // Set a local storage item
-    localStorage.setItem('IDM222LocalName', inputName.value);
-  }
-  function handleRemoveLocal() {
-    console.log('Remove localStorage: IDM222LocalName');
+  const handleRemoveLocal = () => {
+    console.log(`Remove localStorage: ${key}`);
+    localStorage.removeItem(key); // Remove a local storage item
+  };
 
-    // Remove a local storage item
-    localStorage.removeItem('IDM222LocalName');
-  }
-  function handleClearLocal() {
+  const handleClearLocal = () => {
     console.log('Clear all localStorage');
-
-    // ⚠️ Remove all local storage items
-    localStorage.clear();
-  }
+    localStorage.clear(); // ⚠️ Remove all local storage items
+  };
 
   btnSetLocal.addEventListener('click', handleSetLocal, false);
   btnRemoveLocal.addEventListener('click', handleRemoveLocal, false);

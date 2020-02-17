@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Storage</title>
+    <link rel="stylesheet" href="css/screen.css" />
+  </head>
+
+  <body>
+    <div class="clock"></div>
+    <main>
+      <section>
+        <form id="myForm" name="myForm">
+          <div class="control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Doe"
+              value="Anthony"
+              required
+            />
+          </div>
+          <div class="control">
+            <label for="date">Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              value="02/22/1980"
+              required
+            />
+            <p class="feedback" hidden>
+              Please enter a valid date mm/dd/yyyy.
+            </p>
+          </div>
+          <div class="control">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+
+        <div class="control-buttons">
+          <button id="btnSetLocal" type="button">Set Local Storage</button>
+          <button id="btnRemoveLocal" type="button">
+            Remove Local Storage
+          </button>
+          <button id="btnClearLocal" type="button">
+            Clear All Local Storage
+          </button>
+          <button id="btnSetSession" type="button">Set Session Storage</button>
+          <button id="btnRemoveSession" type="button">
+            Remove Session Storage
+          </button>
+          <button id="btnClearSession" type="button">
+            Clear All Session Storage
+          </button>
+          <button id="btnStopClock" type="button">Stop the Clock</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/local.js"></script>
+    <script src="js/session.js"></script>
+  </body>
+</html>
