@@ -36,7 +36,7 @@
      * hours behind. We need the date when not adjusting
      * for timezone.
      */
-    console.log(`Month: ${myDate.getUTCMonth()}`);
+    console.log(`Month: ${myDate.getUTCMonth() + 1}`); // Months are 0 indexed
     console.log(`Date: ${myDate.getUTCDate()}`);
     console.log(`Year: ${myDate.getUTCFullYear()}`);
     console.groupEnd();

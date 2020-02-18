@@ -3,7 +3,7 @@
   const btnRemoveSession = document.getElementById('btnRemoveSession');
   const btnClearSession = document.getElementById('btnClearSession');
 
-  const key = 'IDM222SessionName';
+  const key = 'IDM231SessionName';
 
   const handleSetSession = () => {
     const inputName = document.getElementById('name');

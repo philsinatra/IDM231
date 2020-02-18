@@ -3,7 +3,7 @@
   const btnRemoveLocal = document.getElementById('btnRemoveLocal');
   const btnClearLocal = document.getElementById('btnClearLocal');
 
-  const key = 'IDM222LocalName';
+  const key = 'IDM231LocalName';
 
   const handleSetLocal = () => {
     const inputName = document.getElementById('name');
