@@ -17,16 +17,29 @@ checkAnswer
   });
 
 // Basic Async/Await Example
-const doSomethingAsync = () => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve('I did something'), 3000);
+const add = (a, b) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (a < 0 || b < 0) {
+        return reject('Numbers must be non-negative');
+      }
+
+      resolve(a + b);
+    }, 2000);
   });
 };
 
-const doSomething = async () => {
-  console.log(await doSomethingAsync());
+const doWork = async () => {
+  const sum = await add(1, 99);
+  const sum2 = await add(sum, 50);
+  const sum3 = await add(sum2, 3);
+  return sum3;
 };
 
-console.log('before');
-doSomething();
-console.log('after');
+doWork()
+  .then(result => {
+    console.log('result', result);
+  })
+  .catch(err => {
+    console.log('error: ', err);
+  });
