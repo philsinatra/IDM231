@@ -147,4 +147,4 @@ const tasks = JSON.parse(json);
 // ["Go to the store", "Do the laundry"]
 ```
 
-^ The `parse` method uses the information in teh JSON string to deserialize the data structure.
+^ The `parse` method uses the information in the JSON string to deserialize the data structure.
