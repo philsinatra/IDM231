@@ -40,7 +40,7 @@ Thumbs.db
 
 # Media #
 ############
-*.mp3
+# *.mp3
 *.mp4
 *.ogg
 *.ogv
@@ -53,6 +53,7 @@ Thumbs.db
 *.gif
 assignments
 ECMAScript.pdf
+examples/extras/media/*.mp3
 graphics
 instructor_materials/images
 instructor_setup.md

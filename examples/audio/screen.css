@@ -1,0 +1,25 @@
+main {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+button {
+	background-color: lightgreen;
+	border: 0;
+	font-size: 1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0.75rem;
+	transition: filter 225ms ease-in-out;
+}
+
+button:hover {
+	filter: hue-rotate(90deg)
+}
+
+#btn-stop-sounds {
+	background-color: maroon;
+	color: white;
+}
