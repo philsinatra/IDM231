@@ -15,6 +15,12 @@
 - [Asynchronous Functions](http://digm.drexel.edu/crs/IDM231/presentations/async.pdf)
 - [Working With JSON](http://digm.drexel.edu/crs/IDM231/presentations/json.pdf)
 
+## Additional Examples
+
+- Sounds & Date Inputs
+  - examples/audio
+  - examples/extras
+
 ## Reading Material
 
 - [JavaScript & jQuery](https://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647)
