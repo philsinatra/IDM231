@@ -2,18 +2,18 @@
 
 ## Lecture Slides
 
-- [01-introduction.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/01-introduction.pdf)
-- [02-variables.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/02-variables.pdf)
-- [03-functions.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/03-functions.pdf)
-- [03-objects.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/03-objects.pdf)
-- [04-decisions.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/04-decisions.pdf)
-- [04-loops.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/04-loops.pdf)
-- [05-DOM.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/05-DOM.pdf)
-- [06-events.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/06-events.pdf)
-- [07-storage.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/07-storage.pdf)
-- [07-timers.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/07-timers.pdf)
-- [08-async.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/08-async.pdf)
-- [08-json.pdf](http://digm.drexel.edu/crs/IDM231/cdn/presentations/08-json.pdf)
+- [Introduction](http://digm.drexel.edu/crs/IDM231/presentations/introduction.pdf)
+- [Variables](http://digm.drexel.edu/crs/IDM231/presentations/variables.pdf)
+- [Functions](http://digm.drexel.edu/crs/IDM231/presentations/functions.pdf),
+- [Objects](http://digm.drexel.edu/crs/IDM231/presentations/objects.pdf)
+- [Decisions](http://digm.drexel.edu/crs/IDM231/presentations/decisions.pdf)
+- [Loops](http://digm.drexel.edu/crs/IDM231/presentations/loops.pdf)
+- [Document Object Model (DOM)](http://digm.drexel.edu/crs/IDM231/presentations/document-object-model.pdf)
+- [Events](http://digm.drexel.edu/crs/IDM231/presentations/events.pdf)
+- [Web Storage](http://digm.drexel.edu/crs/IDM231/presentations/storage.pdf)
+- [Timers](http://digm.drexel.edu/crs/IDM231/presentations/timers.pdf)
+- [Asynchronous Functions](http://digm.drexel.edu/crs/IDM231/presentations/async.pdf)
+- [Working With JSON](http://digm.drexel.edu/crs/IDM231/presentations/json.pdf)
 
 ## Reading Material
 

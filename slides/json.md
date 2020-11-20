@@ -1,10 +1,27 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> JSON
+# IDM 221
+
+## Web Design I
+
+### Working With JSON
+
+---
+
+# Objectives
+
+- Introduce JSON Format
+- Discuss Working With JSON
+
+---
+
+# Objective
+
+## Introduce JSON Format
 
 ^ JavaScript Object Notation (pronounced jason), is one of several data formats for transferring and storing data.
 
@@ -103,6 +120,10 @@ Grace,Hopper
 
 ---
 
+# Objective
+
+## Discuss Working With JSON
+
 ## JSON `stringify()` Method
 
 ```javascript
@@ -148,3 +169,5 @@ const tasks = JSON.parse(json);
 ```
 
 ^ The `parse` method uses the information in the JSON string to deserialize the data structure.
+
+^ _(examples/json)_

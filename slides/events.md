@@ -1,11 +1,29 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
+# IDM 221
 
-# Events
+## Web Design I
+
+### Events
+
+---
+
+# Objectives
+
+- Introduce Events
+- Discuss Binding Events
+
+# Objective
+
+## Introduce Events
+
+---
+
+## Events
 
 - Interactions create events
 - Events trigger code
@@ -81,6 +99,12 @@ theme: Work, 1
 ^ _click_ Indicate which events on the selected node(s) will trigger the response. This is called _binding_ an event to a DOM node.
 
 ^ _click_ State the code you want to run when the event occurs. When the event occurs on a specific element, it will trigger a function.
+
+---
+
+# Objective
+
+## Discuss Binding Events
 
 ---
 

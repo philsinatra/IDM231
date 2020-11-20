@@ -1,8 +1,29 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
+
+# IDM 221
+
+## Web Design I
+
+### Functions
+
+---
+
+# Objectives
+
+- Introduce Functions
+- Discuss Variable Scope
+
+---
+
+# Objective
+
+## Introduce Functions
+
+---
 
 > Functions
 
@@ -241,6 +262,12 @@ const myFunction = param => doSomething(param);
 ^ If you have one (and only one) parameter, you can omit the parentheses completely.
 
 ^ Because of the short syntax, arrow functions encourage the use of small functions, which is one of our goals when writing clean, concise scripts.
+
+---
+
+# Objective
+
+## Discuss Variable Scope
 
 ---
 

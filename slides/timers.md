@@ -1,11 +1,22 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
+# IDM 221
 
-# Timers
+## Web Design I
+
+### Timers
+
+---
+
+# Objective
+
+## Discuss Timers
+
+---
 
 ## `setTimeout()`
 

@@ -1,11 +1,31 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
+# IDM 221
 
-# Document Object Model (DOM)
+## Web Design I
+
+### The Document Object Model
+
+---
+
+# Objectives
+
+- Introduce the DOM
+- Work With the DOM Tree
+
+---
+
+# Objective
+
+## Introduce the DOM
+
+---
+
+## Document Object Model (DOM)
 
 ```html
 <html>
@@ -67,6 +87,12 @@ theme: Work, 1
 ^ _Text Nodes_ are represented in the purplish color in this graphic. Once you have accessed an element node, you can then reach the text within that element. This is stored in its own text node.
 
 ^ Text nodes cannot have children. If an element contains text and another child element, the child element is not a child of the text node but rather a child of the containing element. (See the `<em>` element on the first `<li>` item.) This illustrates how the text node is always a new branch of the DOM tree, and no further branches come off of it.
+
+---
+
+# Objective
+
+## Work With the DOM Tree
 
 ---
 

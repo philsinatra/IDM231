@@ -1,10 +1,27 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Objects & Methods
+# IDM 221
+
+## Web Design I
+
+### Objects
+
+---
+
+# Objectives
+
+- Introduce Objects
+- Review Built-In Objects
+
+---
+
+# Objective
+
+## Introduce Objects
 
 ---
 
@@ -45,19 +62,22 @@ const hotel = {
 ## Accessing Properties & Methods
 
 ```javascript
+const hotel = {
+  name: 'Hurley\'s Inn',
+  checkAvailability: function() {
+    return this.rooms - this.booked;
+  }
+};
+
+// dot syntax
 const hotelName = hotel.name;
 const roomsFree = hotel.checkAvailability();
+
+// bracket syntax
+const hotelName = hotel['name'];
 ```
 
 ^ You access the properties and methods of an object using what's called _dot notation_. Use the name of the object, followed by a period, then the name of the property or method you want to access.
-
----
-
-## Accessing Properties & Methods (bracket syntax)
-
-```javascript
-const hotelName = hotel['name'];
-```
 
 ^ You can also access the properties of an object (but not its methods) using square bracket syntax. This syntax should generally be avoided.
 
@@ -106,6 +126,12 @@ const aztecHotel = new Hotel('Aztec', 120, 77);
 ^ You create **instances** of the object using the construction function. The **new** keyword followed by a call to the function creates a new object. The properties of each object are given as arguments to the function.
 
 ^ _examples/objects/objects.js_
+
+---
+
+# Objective
+
+## Review Built-In Objects
 
 ---
 

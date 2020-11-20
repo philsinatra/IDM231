@@ -1,16 +1,48 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-## Introduction
+# IDM 221
+
+## Web Design I
+
+### Introduction
+
+---
+
+[.build-lists: false]
+
+![left](images/avatar.jpg)
+
+## About Me
+
+- Name: Phil Sinatra
+- Email: ps42@drexel.edu
+- GitHub: [@philsinatra](https://github.com/philsinatra)
+
+## About This Course
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)
 - [Course Repository](https://github.com/philsinatra/IDM231)
-- [Final Project](https://github.com/philsinatra/IDM231/blob/master/docs/assignments/assignment-final.md)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
+
+---
+
+# Objectives
+
+- Define JavaScript
+- Review the History of JavaScript
+- Define a "Script"
+- Review JavaScript Basics
+
+---
+
+# Objective
+
+## Define JavaScript
 
 ---
 
@@ -44,76 +76,35 @@ theme: Work, 1
 
 ## JavaScript: A Basic Definition
 
-- high level
-- dynamic
-- dynamically typed
-- weakly typed
-- interpreted
-- mylti-paradigm
+- adds dynamic and interactive elements
+- a client-side language
+- can be inserted anywhere
 
-^ **high level**: Javascript allows you to ignore the details of the machine where it's running. It manages memory automatically so you can focus on the code. It is highly flexible and extremely powerful.
+^ JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to _(click)_ add dynamic and interactive elements to websites. While JavaScript is influenced by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed by Sun Microsystems.
 
-^ JavaScript has nothing to do with Java. It's a poor name choice but we have to live with it.
+^ JavaScript is a _(click)_ client-side scripting language, which means the source code is processed by the client's web browser rather than on the web server. This means JavaScript functions can run after a webpage has loaded without communicating with the server. For example, a JavaScript function may check a web form before it is submitted to make sure all the required fields have been filled out. The JavaScript code can produce an error message before any information is actually transmitted to the server.
+
+^ Like server-side scripting languages, such as PHP and ASP, JavaScript code can be _(click)_ inserted anywhere within the HTML of a webpage. However, only the output of server-side code is displayed in the HTML, while JavaScript code remains fully visible in the source of the webpage. It can also be referenced in a separate .JS file, which may also be viewed in a browser.
+
+---
+
+# Objective
+
+## Review the History of JavaScript
 
 ---
 
 ## JavaScript Versions
 
-### ECMAScript
-
-- ES10
-- ES2019
-- ECMAScript 2019
+[ECMAScript Editions](https://www.w3schools.com/js/js_versions.asp)
 
 ^ ECMAScript is a standard up which JavaScript is based. It's often abbreviated to ES.
 
 ---
 
-## Coding Styles
+# Objective
 
-### Popular Style Guides
-
-- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-- [AirBnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-
-^ A coding style is a set of conventions used. It's an agreement with yourself and your team to keep consistency on a project. Having fixed rules on your code writing format helps a lot in order to have more readable and managed code.
-
-^ There are quite a few available, these are 2 of the more commonly used ones. It's up to you to follow one or create your own.
-
-^ JavaScript does not consider white space meaningful. Use whitespace to your advantage to make your code more meaningful. As an example, I like to always use 2 spaces to indent code.
-
----
-
-### Case Sensitive
-
-```javascript
-const something = '';
-
-const Somthing = '';
-```
-
-^ JavaScript is case sensitive
-
----
-
-### Comments
-
-```javascript
-/*
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Vivamus et erat orci. Etiam in dolor at arcu scelerisque.
-*/
-
-// single line comment
-```
-
-^ There are two types of comments in JavaScript.
-
----
-
-### Reserved Words
-
-- [W3C Reserved Words List](https://www.w3schools.com/js/js_reserved.asp)
+## Define a "Script"
 
 ---
 
@@ -172,7 +163,10 @@ const Somthing = '';
 
 ---
 
-![fit](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/progressive_enhancement.png)
+[.hide-footer]
+[.slidenumbers: false]
+
+![fit](images/progressive-enhancement.png)
 
 ^ Before diving into the JavaScript language, you need to know how it will fit together with the HTML and CSS in your web pages.
 
@@ -180,7 +174,13 @@ const Somthing = '';
 
 ---
 
-## Creating a Basic Script
+# Objective
+
+## Review JavaScript Basics
+
+---
+
+## A Basic Script
 
 ```javascript
 const today = new Date();
@@ -200,45 +200,80 @@ if (current_hour > 18) {
 
 ---
 
+## Case Sensitive
+
+```javascript
+const something = '';
+
+const Somthing = '';
+```
+
+^ JavaScript is case sensitive
+
+---
+
+## Comments
+
+```javascript
+/*
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Vivamus et erat orci. Etiam in dolor at arcu scelerisque.
+*/
+
+// single line comment
+```
+
+^ There are two types of comments in JavaScript.
+
+---
+
+[.build-lists: false]
+
+## Reserved Words
+
+- [W3C Reserved Words List](https://www.w3schools.com/js/js_reserved.asp)
+
+---
+
 ## Linking to a Javascript File
 
 ```html
-<h1>My Website</h1>
-<p>Welcome to my website.</p>
-<script src="scripts/myscript.js"></script>
+<body>
+  <h1>My Website</h1>
+  <p>Welcome to my website.</p>
+  <script src="scripts/myscript.js"></script>
+</body>
 ```
 
 ^ When you want to use JavaScript with a web page, you use the HTML `<script>` element to tell the browser it is coming across a script. Its `src` attribute tells people where the Javascript file is stored.
-
----
-
-## Placing the Script in the Page
-
-```html
-<body>
-  <h1>My Website</h1>
-  <p>Welcome to my website.</p>
-  <script>document.write('<h2>Contents</h2>');</script>
-  <p>Here is a paragraph</p>
-```
-
-^ You may see JavaScript in the HTML between opening `<script>` and closing `</script>` tags, but it is better to put scripts in their own files.
-
----
-
-## JS Runs where it's Found in the HTML
-
-```html
-<body>
-  <h1>My Website</h1>
-  <p>Welcome to my website.</p>
-  <script src="js/main.js"></script>
-</body>
-</html>
-```
 
 ^ When the browser comes across a `<script>` element, it stops to load the script and then checks to see if it needs to do anything. This has implications for where `<script>` elements should be placed, and can affect the loading time of pages.
 
 ^ Like any new language, there are new words to learn (the vocabulary) and rules for how these can be put together (the grammar and syntax of the language).
 
 ^ Web browsers (and computers in general) approach tasks in a very different way than a human might. Your instructions need to reflect how computers get things done.
+
+---
+
+## Inline Scripts ❌
+
+```html
+<body>
+  <h1>My Website</h1>
+  <p>Welcome to my website.</p>
+  <script>document.write('<h2>Contents</h2>');</script>
+</body>
+```
+
+^ You may see JavaScript in the HTML between opening `<script>` and closing `</script>` tags, but it is better to put scripts in their own files.
+
+---
+
+[.build-lists: false]
+
+## Helpful VSCode Extensions
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [JavaScript Snippet Pack](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack)
+- [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)

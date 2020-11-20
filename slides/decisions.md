@@ -1,8 +1,30 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
+
+# IDM 221
+
+## Web Design I
+
+### Decisions
+
+---
+
+# Objectives
+
+- Discuss Evaluating Conditions
+- Introduce If Statements
+- Introduce Switch Statements
+
+---
+
+# Objective
+
+## Discuss Evaluating Conditions
+
+---
 
 ![decision flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-flowchart.png)
 
@@ -168,6 +190,12 @@ if (score > 50) {
 
 ---
 
+# Objective
+
+## Introduce If Statements
+
+---
+
 ## If Statements
 
 ```javascript
@@ -218,28 +246,6 @@ if (level === 'one') {
 
 ---
 
-## Switch Statements
-
-```javascript
-switch (level) {
-  case 'one':
-    title = 'Level 1';
-    break;
-  case 'two':
-    title = 'Level 2';
-    break;
-  default:
-    title = 'Level not 1 or 2';
-    break;
-}
-```
-
-^ A `switch` statement starts with a variable called the `switch value`. Each `case` indicates a possible value for this variable and the code that should run if the variable matches that value.
-
-^ _examples/decisions/switch.html_
-
----
-
 ## Checking Existence
 
 ```javascript
@@ -265,3 +271,31 @@ if (myElement) {
   // Element does not exist, do something else specific.
 }
 ```
+
+---
+
+# Objective
+
+## Introduce Switch Statements
+
+---
+
+## Switch Statements
+
+```javascript
+switch (level) {
+  case 'one':
+    title = 'Level 1';
+    break;
+  case 'two':
+    title = 'Level 2';
+    break;
+  default:
+    title = 'Level not 1 or 2';
+    break;
+}
+```
+
+^ A `switch` statement starts with a variable called the `switch value`. Each `case` indicates a possible value for this variable and the code that should run if the variable matches that value.
+
+^ _examples/decisions/switch.html_

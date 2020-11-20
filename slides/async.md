@@ -1,10 +1,20 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Asynchronicity in Programming
+# IDM 221
+
+## Web Design I
+
+### Asynchronous Functions
+
+---
+
+# Objective
+
+## Asynchronicity in Programming
 
 ^ Computers are asynchronous by design. Asynchronous means that things can happen independently of the main program flow.
 

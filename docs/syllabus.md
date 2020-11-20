@@ -20,15 +20,15 @@ By the end of the course, student will be able to
 
 | Week | Topics |
 | ---- | ------ |
-| Week 1 | Introduction & ABCs of Programming |
-| Week 2 | Variables |
-| Week 3 | Functions, Methods & Objects |
-| Week 4 | Decisions & Loops |
-| Week 5 | Document Object Model (DOM) |
-| Week 6 | Events |
-| Week 7 | ES6 |
-| Week 8 | Demo Lab |
-| Week 9 | Open Lab |
+| Week 1 | [Introduction](../slides/introduction.md) |
+| Week 2 | [Variables](../slides/variables.md) |
+| Week 3 | [Functions](../slides/functions.md), [Objects](../slides/objects.md) |
+| Week 4 | [Decisions](../slides/decisions.md) & [Loops](../slides/loops.md) |
+| Week 5 | [Document Object Model (DOM)](../slides/document-object-model.md) |
+| Week 6 | [Events](../slides/events.md) |
+| Week 7 | [Web Storage](../slides/storage.md) & [Timers](../slides/timers.md) |
+| Week 8 | [Asynchronous Functions](../slides/async.md) |
+| Week 9 | [Working With JSON](../slides/json.md) |
 | Week 10 | Open Lab |
 
 ## Required Materials
@@ -117,6 +117,10 @@ Please also see the official Drexel university policy on Academic Dishonesty at 
 ## Statement for Students with Disabilities
 
 Students with disabilities requesting accommodations and services at Drexel University need to present a current accommodation verification letter (AVL) to faculty before accommodations can be made. This MUST be done prior to the midterm! AVL’s are issued by the Office of Disability Services (ODS). For additional information, contact ODS at [http://www.drexel.edu/oed/policies/Overview/](http://www.drexel.edu/oed/policies/Overview/)
+
+## COVID-19 Syllabus Addendum
+
+- [COVID-19 Syllabus Addendum](https://github.com/Drexel-University-IDM/COVID19)
 
 ## Acknowledging Conditions and Obligations in Syllabus
 

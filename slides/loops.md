@@ -1,12 +1,55 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Loops
+# IDM 221
+
+## Web Design I
+
+### Loops
 
 ^ Loops check a condition. If it returns **true**, a code block will run. Then the condition will be checked again and if it still returns **true**, the code block will run again. It repeats until the condition returns **false**.
+
+---
+
+# Objectives
+
+- Introduce the Loop Concept
+- Review Types of Loops
+
+---
+
+# Objective
+
+## Introduce the Loop Concept
+
+---
+
+![loop start](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_start.png)
+
+^ The first time the loop is run, the variable `i` (the counter) is assigned a value of zero.
+
+^ Every time the loop is run, the condition is checked. Is the variable `i` less than 10?
+
+^ Then the code inside the loop (the statement between the curly braces) is run.
+
+---
+
+![loop end](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_end.png)
+
+^ The variable `i` can be used inside the loop. Here it is used to write a number to the console.
+
+^ When the statements have been finished, the variable `i` is incremented by 1.
+
+^ When the condition is no longer **true**, the loop ends. The script moves on to the next line of code.
+
+---
+
+# Objective
+
+## Review Types of Loops
 
 ---
 
@@ -41,26 +84,6 @@ i++
 ^ **Condition**: the loop should continue to run until the counter reaches a certain number.
 
 ^ **Update**: every time the loop has run the statements in the curly braces, it adds one to the counter.
-
----
-
-![loop start](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_start.png)
-
-^ The first time the loop is run, the variable `i` (the counter) is assigned a value of zero.
-
-^ Every time the loop is run, the condition is checked. Is the variable `i` less than 10?
-
-^ Then the code inside the loop (the statement between the curly braces) is run.
-
----
-
-![loop end](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/05-loop_end.png)
-
-^ The variable `i` can be used inside the loop. Here it is used to write a number to the console.
-
-^ When the statements have been finished, the variable `i` is incremented by 1.
-
-^ When the condition is no longer **true**, the loop ends. The script moves on to the next line of code.
 
 ---
 
@@ -131,6 +154,15 @@ for (const property in myObject) {
 ```
 
 ^ The `for...in` statement loops over the properties of an object. This syntax is not recommended for use with arrays. Its most practical use is for debugging purposes, being an easy way to check the properties of an object.
+
+---
+
+### `map`
+
+```javascript
+const numbers = [4, 9, 16, 25];
+const sqrt = numbers.map(number => number*number);
+```
 
 ---
 

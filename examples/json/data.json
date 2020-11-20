@@ -1,0 +1,16 @@
+{
+  "inventory": [
+    {
+      "name": "Red Delicious Apples",
+      "count": 24
+    },
+    {
+      "name": "Granny Smith Apples",
+      "count": 36
+    },
+    {
+      "name": "Northern Spy",
+      "count": 0
+    }
+  ]
+}

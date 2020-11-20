@@ -1,10 +1,30 @@
 build-lists: true
-footer: IDM 231: Scripting for IDM I
+footer: IDM 221: Web Authoring I
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Variables
+# IDM 221
+
+## Web Design I
+
+### Variables
+
+---
+
+# Objectives
+
+- Discuss Declaring Variables
+- Discuss Variable Types
+- Discuss Expressions
+- Introduce Arrays
+- Introduce the Console
+
+---
+
+# Objective
+
+## Discuss Declaring Variables
 
 ---
 
@@ -24,6 +44,17 @@ $$
 ^ You may be able to do calculations like this in your head, but when writing a script to do this calculation, you need to give the computer very detailed instructions. You might tell it to perform the following four steps in order: (_click through list_)
 
 ^ In this case, you would use variables to "remember" the values for width and height. This also illustrates how a script contains very explicit instructions about exactly what you want the computer to do. You can compare variables to short-term memory, because once you leave the page, the browser will forget any information it holds.
+
+---
+
+## Naming Rules: Variables
+
+1. Must begin with a letter, dollar sign ($), or an underscore ( \_ )
+1. Can not contain dashes or periods
+1. Can not use _keywords_ or _reserved_ words
+1. Are case sensitive
+1. Should describe the info they will represent
+1. Should use _camelCase_ or _under\_scores_ for multi word variables
 
 ---
 
@@ -85,6 +116,12 @@ const a = 'test'
 ^ Variables declared with `var` or `let` can be changed later in the program, and reassigned. Once a `const` is initialized, its value can never be changed, and it can't be reassigned to a different value.
 
 ^ Modern JavaScript developers might choose to always use `const` for variables that don't need to be reassigned later in the program.
+
+---
+
+# Objective
+
+## Discuss Variable Types
 
 ---
 
@@ -194,6 +231,12 @@ const myArray = [];
 ```
 
 ^ Anything that's not a primitive type is an object type.
+
+---
+
+# Objective
+
+## Discuss Expressions
 
 ---
 
@@ -310,14 +353,9 @@ a || b
 
 ---
 
-## Naming Rules: Variables
+# Objective
 
-1. Must begin with a letter, dollar sign ($), or an underscore ( \_ )
-1. Can not contain dashes or periods
-1. Can not use _keywords_ or _reserved_ words
-1. Are case sensitive
-1. Should describe the info they will represent
-1. Should use _camelCase_ or _under\_scores_ for multi word variables
+## Introduce Arrays
 
 ---
 
@@ -457,6 +495,12 @@ const b = Array.from(a);
 // ES6
 const b = [...a]
 ```
+
+---
+
+# Objective
+
+## Introduce the Console
 
 ---
 
